@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'morgant';
+    src: url('/fonts/Gotham/Morgant Regular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'gotham';
+    src: url('/fonts/Gotham/Gotham-Ultra.otf') format('opentype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'modius';
+    src: url('/fonts/Gotham/Modius Bold.ttf') format('opentype');
+  }
+  @font-face {
+    font-family: 'gothamt';
+    src: url('/fonts/Gotham/GothamNarrow-Thin.otf') format('opentype');
+    font-weight: lighter;
+  }
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+body {
+    background: #090E38;
+    background-size: cover;
+    color: white;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: 'gotham';
+}
+header {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'morgant';
+    font-size: x-small;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 500px;
+    padding: 0;
+}
+.menu li a {
+    color: white;
+    text-decoration: none; 
+    justify-content: space-around;
+}
+.menu li a:hover {
+    background: linear-gradient(90deg, rgb(221, 189, 27), rgb(93, 193, 185));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.menu-interno {
+    display: none;
+    color: white;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+}
+.menu li:hover .menu-interno {
+    display: block;
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.titulo h1 {
+    font-family: 'morgant';
+    width: 620px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    font-size: 70px;
+    color: #090E38;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: transparent;
+    -webkit-background-clip: text;
+    margin: 30px 0 0 0;
+}
+.titulo h4 {
+    font-size: x-large;
+    margin: 0;
+    font-family: 'modius';
+}
+.art {
+    margin: 20px;
+}
+.scroll {
+    height: 1000px;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    overflow-x: scroll;
+}
+.proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.contenido {
+    padding: 15px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    left: 100px;
+    z-index: 1;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.contenido h5 {
+    font-family: 'modius';
+    margin: 0;
+    text-align: center;
+    font-size: larger;
+}
+.contenido p {
+    font-family: 'gothamt';
+    color: grey;
+    font-size: x-small;
+}
+.btn {
+    margin: 0;
+    width: 150px;
+    height: 35px;
+    font-size: xx-small;
+    background: #E11E5E;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+}
+.imagen-contenido {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 50px;
+    background: -webkit-linear-gradient(-45deg, rgb(56, 171, 230), rgb(73,202,128) 65%,rgb(221, 187, 27) 85%, rgb(255, 107, 107) );
+}
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacto .container {
+    padding: 70px 0 0 0;
+}
+#contacto p {
+    font-family: 'gothamt';
+}
+.redes-sociales {
+    max-width: 700px;
+    display: flex;
+    list-style: none;
+}
+.redes-sociales li {
+    padding: 0 5px;
+    font-family: 'gothamt';
+    font-size: small;
+}
+.redes-sociales a{
+    text-decoration: none;
+    color: white;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'gothamt';
+}
+.logos-redes-foot {
+   justify-content: end;
+}
+#contacto h1{
+    font-family: 'modius';
+    font-size: 50px;
+    width: 720px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+}
+#contacto h3 {
+    font-family: 'modius';
+    font-size: medium;
+}

@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'morgant';
+    src: url('/fonts/Gotham/Morgant Regular.otf') format('opentype');
+  }
+@font-face {
+    font-family: 'modius';
+    src: url('/fonts/Gotham/Modius Bold.ttf') format('opentype');
+  }
+  @font-face {
+    font-family: 'gotham';
+    src: url('/fonts/Gotham/GOTHAM BOOK.TTF') format('opentype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family:'gothamt';
+    src: url('/fonts/Gotham/Gotham-Light.otf') format('opentype');
+    font-weight: lighter;
+  }
+* {
+color: white;
+box-sizing: border-box;
+flex-wrap: wrap;
+}
+body {
+    background: #090E38;
+    background-size: cover;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: 'gotham';
+}
+header {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 500px;
+    padding: 0;
+    font-family: 'morgant';
+    font-size: x-small;
+}
+.menu li a {
+    color: white;
+    text-decoration: none; 
+    justify-content: space-around;
+}
+.menu li a:hover {
+    background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.menu-interno {
+    display: none;
+    color: white;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+}
+.menu li:hover .menu-interno {
+    display: block;
+}
+#presentacion h1 {
+    font-size: 50px;
+}
+#presentacion .yo-soy {
+    display: flex;
+    align-items: center;
+    left: 50px;
+    top: 50px;
+}
+.justify-content-start {
+    margin: 15px 0;
+}
+.infobasica {
+    font-family: 'morgant';
+    font-size: xx-small;
+    padding: 0;
+}
+#tabmepresento :checked ~ nav label.tabmepresento {
+    color: #E11E5E;
+}
+.infobasica ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.infobasica li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+.infobasica li:hover {
+    background: #171C44;
+}
+.pr {
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
+    justify-content: center;
+    width: 100px;
+}
+#sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.imgj {
+    position: relative;
+}
+.imagen19 {
+    position: absolute;
+}
+.imagen01 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.imagen02 {
+    position: absolute;
+    left: 260px;
+    top: -10px;
+}
+.lee-sobre-mi {
+    width: 400px;
+    height: 500px;
+    display: flex;
+}
+.bla {
+    position: relative;
+    top: -100px;
+
+}
+.titulo {
+    max-width: 600px;
+    width: 400px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo h1 {
+    font-family: 'modius';
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+.titulo h4 {
+    font-family: 'morgant';
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+.titulo h2 {
+    font-family: 'morgant';
+    font-weight: lighter;
+    font-size: 35px;
+    width: 330px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+}
+button.nav-link {
+    color: white;
+}
+button.nav-link:hover {
+    color: white;
+}
+.nav-underline .nav-link.active {
+    color: #E11E5E;
+}
+.titulo .nav .nav-underline {
+    font-family: 'morgant';
+    font-size: x-small;
+    color: white;
+}
+.tab-content {
+    margin: 25px 0;
+    font-family: 'gothamt';
+    font-size: small;
+}
+#portafolio {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.porta {
+    display: flex;
+    flex-direction: column;
+}
+.d-flex h4 {
+    font-family: 'morgant';
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+.d-flex h2 {
+    width: 270px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'morgant';
+    font-weight: lighter;
+    font-size: 35px;
+    width: 330px;
+}
+.d-flex h1 {
+    margin: 0;
+    font-family: 'modius';
+    font-size: 35px;
+}
+.botone {
+    background: #E11E5E;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'morgant';
+    font-size: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.botone a {
+    text-decoration: none;
+    color: white;
+}
+.botone:hover {
+    background: red;
+}
+.proyect-galery {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+.pro {
+    display: flex;
+}
+.det {
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    font-family: 'gotham';
+    background: #171C44;
+}
+.det h4 {
+    font-size: x-small;
+    margin: 0;
+
+}
+.det p {
+    margin: 0;
+}
+#servicios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 50px 0;
+}
+#servicios h4 {
+    font-family: 'morgant';
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+#servicios h1 {
+    margin: 0;
+    font-family: 'modius';
+    font-size: 35px;
+}
+#servicios h2 {
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-family: 'morgant';
+    font-weight: lighter;
+    font-size: 35px;
+    width: 200px;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center div {
+    font-family: 'gothamt';
+    font-weight: lighter;
+    font-size: x-small;
+    display: flex;
+    justify-content: flex-end;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center li {
+    padding: 5px 0;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center li a {
+    text-decoration: none;
+    color: white;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center li a:hover {
+    font-weight: bold;
+}
+.redes-sociales {
+    max-width: 700px;
+    display: flex;
+    list-style: none;
+}
+.redes-sociales li {
+    padding: 0 5px;
+    font-family: 'gothamt';
+    font-size: small;
+}
+.redes-sociales a{
+    text-decoration: none;
+    color: white;
+}
+.certificaciones {
+    background: #171C44;
+    margin: 50px 10px;
+    padding: 0;
+}
+.certificaciones h4 {
+    font-family: 'morgant';
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+.certificaciones h1 {
+    margin: 0;
+    font-family: 'modius';
+    font-size: 35px;
+}
+.certificaciones h2 {
+    font-size: 50px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-family: 'morgant';
+    font-weight: lighter;
+    font-size: 35px;
+    width: 420px;
+}
+.cursos {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+.cursos div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+}
+.nombre-curso {
+    width: 200px;
+    position: absolute;
+    top: -160px;
+    font-family: 'modius';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+.descripcion{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    bottom: 90px;
+    font-family: 'gothamt';
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fecha {
+    width: 80px;
+    position: absolute;
+    bottom: 47px;
+    font-family: 'gothamt';
+    font-size: xx-small;
+    color: #818181;
+
+}
+.card .img-box {
+    height: 200px;
+}
+.card .img-box img {
+    width: 100%;
+}
+.clientes {
+    margin: 50px 0;
+    display:flex;
+    flex-direction: column;
+}
+.clientes h4 {
+    font-family: 'morgant';
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+.card {
+    margin: 0;
+    padding: 0;
+    background: #090E38;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios-de-clientes {
+    background-color: #171C44;
+    width: 25%;
+    margin: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.card-text {
+    background-color: #171C44;
+    padding: 25px 0 0 0;
+    font-family: 'gotham';
+    font-size: small;
+    text-align: left;
+}
+.clientes .ct {
+    font-family: 'morgant';
+    font-size: 6px;
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.ct:hover {
+    background: #171C44;
+}
+.clientes h1 {
+    margin: 0;
+    font-family: 'modius';
+    font-size: 35px;
+}
+.clientes h2 {
+    margin: 0;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'morgant';
+    font-weight: lighter;
+    font-size: 35px;
+    width: 330px;
+}
+.empresas {
+    display: flex;
+    flex-direction: row;
+}
+.loslogos {
+    display: flex;
+    justify-content: center;
+}
+.slog {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.colaboraciones {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    border: 0.1px solid;
+    border-color: #171C44;
+    text-align: center;
+    align-items: center;
+}
+#contacto {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacto h3 {
+    font-family: 'morgant';
+    font-size: medium;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logos-redes-foot {
+   justify-content: end;
+}
+
+.d-flex.justify-content-center .cro {
+    font-family: 'modius';
+    font-size: 50px;
+    width: 720px;
+    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
