@@ -78,10 +78,10 @@ header {
     -webkit-background-clip: text;
     margin: 5px;
     font-family: 'modius';
+    font-size: x-large;
     
 }
 .titulo h1 {
-    width: 680px;
     margin: 5px;
     font-family: 'modius';
     font-size: xx-large;
@@ -216,11 +216,11 @@ input, textarea {
     font-family: 'gothamt';
     font-size: small;
 }
-.redes-sociales a{
+.redes-sociales a {
     text-decoration: none;
     color: white;
 }
-#contacto h1{
+#contacto h1 {
     font-family: 'modius';
     font-size: 50px;
     width: 720px;
