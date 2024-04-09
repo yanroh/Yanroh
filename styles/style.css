@@ -17,51 +17,59 @@
     font-weight: lighter;
   }
 * {
-color: white;
-box-sizing: border-box;
-flex-wrap: wrap;
+    color: white;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 body {
     background: #090E38;
     background-size: cover;
     flex-wrap: wrap;
-    margin: 20px;
     font-family: 'gotham';
 }
 header {
-    max-width: 1500px;
-    display: flex;
-    justify-content: space-between;
 }
-.menu ul{
-    display: flex;
+.im-yan {
+    width: fit-content;
+}
+.d-flex.row .d-none.d-md-inline{
+    width: 200px;
+}
+.container-fluid button {
+    border-radius: none;
+    navbar-light-icon-color: white
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.menu ul {
     list-style: none;
-    justify-content: space-around;
-    width: 500px;
     padding: 0;
     font-family: 'morgant';
-    font-size: x-small;
+    font-size: 30px;
 }
-.menu li a {
+.navbar-item {
+    margin-right: 10px;
+    border-bottom: solid 0.5px #49CA80;
+}
+.nav-link {
     color: white;
-    text-decoration: none; 
-    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+}
+.nav-link:hover {
+    ackground: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-background-clip: text;
+    color: transparent; 
 }
 .menu li a:hover {
     background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-background-clip: text;
     color: transparent; 
-}
-.menu-interno {
-    display: none;
-    color: white;
-    position: absolute;
-    list-style: none;
-    width: 200px;
-    background-color: black;
-}
-.menu li:hover .menu-interno {
-    display: block;
 }
 #presentacion h1 {
     font-size: 50px;
@@ -97,6 +105,34 @@ header {
     transition: all 0.3s ease;
     margin: 0 5px;
 }
+.d-md-none.d-inline.row div {
+    padding: 10px 0 0 0;
+}
+.d-md-none.d-inline.row .column {
+    margin-top: 50px;
+    padding: 10px 0;
+}
+.d-md-none.flex-column.d-flex.justify-content-flex-start {
+    width: 350px;
+    height: 200px;
+}
+.d-md-none.flex-column.d-flex.justify-content-flex-start .pr {
+    font-family: 'morgant';
+    font-size: xx-small;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+}
+.d-md-none.flex-column.d-flex.justify-content-flex-start .sp {
+    margin: 10px 0 0 0;
+    font-family: 'morgant';
+    font-size: xx-small;
+}
 .infobasica li:hover {
     background: #171C44;
 }
@@ -105,6 +141,11 @@ header {
     border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
     justify-content: center;
     width: 100px;
+}
+.imagen04 {
+    position: absolute;
+    right: -218px;
+    top: 215px;
 }
 #sobre-mi {
     display: flex;
@@ -147,25 +188,18 @@ header {
 }
 .titulo h1 {
     font-family: 'modius';
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 20px;
     margin: 0;
 }
 .titulo h4 {
     font-family: 'morgant';
-    font-size: 10px;
+    font-size: 6px;
     color: grey;
     margin: 0;
 }
-.titulo h2 {
-    font-family: 'morgant';
-    font-weight: lighter;
-    font-size: 35px;
-    width: 330px;
-    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin: 0;
+h2 {
+    font-size: 30px;
 }
 button.nav-link {
     color: white;
@@ -186,6 +220,36 @@ button.nav-link:hover {
     font-family: 'gothamt';
     font-size: small;
 }
+.d-flex.flex-column.flex-sm-row .d-flex.flex-column.flex-sm-row ul {
+    font-family: 'modius';
+    font-size: 10px;
+    padding: 0;
+    list-style: none;
+
+}
+.btn.btn-outline-success {
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
+    color: white;
+    font-family: 'morgant';
+    font-size: 12px;
+    max-width: 240px;
+    padding: 15px;
+    margin: 10px;
+
+}
+.btn.btn-outline-success:hover {
+    background: #171C44;
+}
+.btn.btn-danger {
+    background: #E11E5E;
+    border-radius: 1px;
+    font-family: 'morgant';
+    font-size: 12px;
+    max-width: 240px;
+    padding: 15px;
+    margin: 10px;
+}
 #portafolio {
     display: flex;
     justify-content: space-around;
@@ -197,41 +261,19 @@ button.nav-link:hover {
     display: flex;
     flex-direction: column;
 }
+.d-flex.flex-column.flex-sm-row.justify-content-center.align-items-center .col-md-6 {
+    width: 350px;
+}
 .d-flex h4 {
     font-family: 'morgant';
-    font-size: 10px;
+    font-size: 6px;
     color: grey;
     margin: 0;
-}
-.d-flex h2 {
-    width: 270px;
-    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin: 0;
-    font-size: 50px;
-    font-family: 'morgant';
-    font-weight: lighter;
-    font-size: 35px;
-    width: 330px;
 }
 .d-flex h1 {
     margin: 0;
     font-family: 'modius';
-    font-size: 35px;
-}
-.botone {
-    background: #E11E5E;
-    width: 150px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-family: 'morgant';
-    font-size: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    
+    font-size: 30px;
 }
 .botone a {
     text-decoration: none;
@@ -274,45 +316,33 @@ button.nav-link:hover {
     align-items: flex-end;
     margin: 50px 0;
 }
+.flex-column.flex-sm-row.d-flex .row.col-md-6.d-flex.align-items-center.justify-content-center .lista {
+    font-family: 'gothamt';
+    width: fit-content;
+    font-size: smaller;
+}
 #servicios h4 {
     font-family: 'morgant';
-    font-size: 10px;
+    font-size: 6px;
     color: grey;
     margin: 0;
 }
 #servicios h1 {
     margin: 0;
     font-family: 'modius';
-    font-size: 35px;
+    font-size: 30px;
 }
-#servicios h2 {
-    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin: 0;
-    font-family: 'morgant';
-    font-weight: lighter;
-    font-size: 35px;
-    width: 200px;
-}
-.row.col-6.d-flex.align-items-center.justify-content-center div {
-    font-family: 'gothamt';
-    font-weight: lighter;
-    font-size: x-small;
-    display: flex;
-    justify-content: flex-end;
-}
-.row.col-6.d-flex.align-items-center.justify-content-center li {
+.row.col-md-6.d-flex.align-items-center.justify-content-center li {
     padding: 5px 0;
     list-style: none;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.row.col-6.d-flex.align-items-center.justify-content-center li a {
+.row.col-md-6.d-flex.align-items-center.justify-content-center li a {
     text-decoration: none;
     color: white;
 }
-.row.col-6.d-flex.align-items-center.justify-content-center li a:hover {
+.row.col-md-6.d-flex.align-items-center.justify-content-center li a:hover {
     font-weight: bold;
 }
 .redes-sociales {
@@ -331,30 +361,29 @@ button.nav-link:hover {
 }
 .certificaciones {
     background: #171C44;
-    margin: 50px 10px;
+    margin: 50px 0;
     padding: 0;
 }
 .certificaciones h4 {
     font-family: 'morgant';
-    font-size: 10px;
+    font-size: 6px;
     color: grey;
     margin: 0;
 }
 .certificaciones h1 {
     margin: 0;
     font-family: 'modius';
-    font-size: 35px;
+    font-size: 30px;
 }
-.certificaciones h2 {
-    font-size: 50px;
+.cts {
     background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin: 0;
     font-family: 'morgant';
     font-weight: lighter;
-    font-size: 35px;
-    width: 420px;
+    font-size: 30px;
+    width: fit-content;
 }
 .cursos {
     flex-wrap: nowrap;
@@ -410,7 +439,7 @@ button.nav-link:hover {
 }
 .clientes h4 {
     font-family: 'morgant';
-    font-size: 10px;
+    font-size: 6px;
     color: grey;
     margin: 0;
 }
@@ -428,8 +457,6 @@ button.nav-link:hover {
 
 .testimonios-de-clientes {
     background-color: #171C44;
-    width: 25%;
-    margin: 20px;
     padding: 30px;
     flex-wrap: wrap;
 }
@@ -460,17 +487,7 @@ button.nav-link:hover {
 .clientes h1 {
     margin: 0;
     font-family: 'modius';
-    font-size: 35px;
-}
-.clientes h2 {
-    margin: 0;
-    background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-family: 'morgant';
-    font-weight: lighter;
-    font-size: 35px;
-    width: 330px;
+    font-size: 30px;
 }
 .empresas {
     display: flex;
@@ -516,9 +533,34 @@ footer {
 
 .d-flex.justify-content-center .cro {
     font-family: 'modius';
-    font-size: 50px;
-    width: 720px;
+    font-size: 25px;
+    width: fit-content;
     background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.font-responsive {
+    font-size: 25px !important;
+    @media (min-width: 576px) {
+        font-size: 50px !important;
+    }
+}
+.font-subtitle-responsive {
+    font-size: 6px !important;
+    @media (min-width: 576px) {
+        font-size: 10px !important;
+    }
+}
+.font-buttom-responsive {
+    font-size: 12px !important;
+    @media (min-width: 576px) {
+        font-size: 8px !important;
+    }
+}
+.font-ul-responsive {
+    font-size: 20px !important;
+    @media (min-width: 576px) {
+        font-size: 10px !important;
+    }
 }

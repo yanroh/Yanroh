@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,60 +10,97 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/png/YANROH.png" width="76px" height="38px">
-        </div>
-        <div class="menu">    
-            <ul>
-                <li><a href="/index.html">INICIO</a></li>
-                <li> <a href="/perfil.html">SOBRE MI</a> </li>
-                <li><a href="/portafolio.html">PORTAFOLIO</a></li>
-                <li><a href="/contacto.html">CONTACTO</a></li>
-            </ul>
-        </div>
-        <div>
-            <img src="./assets/png/Facebook.png" alt="10px">
-            <img src="./assets/png/Instagram.png" alt="">
-            <img src="./assets/png/Be.png" alt="">
-            <img src="./assets/png/Linkedin.png" alt="">
-        <a href="mailto:hola@yanroh.me">
-            <img src="./assets/png/web(YANROH)-assets-13.png" width="200px">
-        </a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm border-bottom border-dark">
+                <div class="container-fluid">
+                        <img src="./assets/png/YANROH.png" width="76px" height="38px">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menunavegacion">
+                            <span class="white navbar-toggler-icon"></span>
+                        </button>
+
+                        <div id="menunavegacion" class="justify-content-md-center align-items-md-center mt-3 menu collapse navbar-collapse">    
+                            <ul class="d-md-inline-flex font-ul-responsive navbar-var ms-0">
+                                <li class="navbar-item"><a class="nav-link" href="/index.html">INICIO</a></li>
+                                <li class="navbar-item"> <a class="nav-link" href="/perfil.html">SOBRE MI</a> </li>
+                                <li class="navbar-item"><a class="nav-link" href="/portafolio.html">PORTAFOLIO</a></li>
+                                <li class="navbar-item"><a class="nav-link" href="/contacto.html">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    <div class="d-none d-md-inline">
+                        <div class="d-flex">
+                            <div class="border-start p-2 border-dark">
+                            <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" alt="10px"></a>
+                            </div>
+                            <div class="border-start p-2 border-dark">
+                            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" alt="10px"></a>
+                            </div>
+                            <div class="border-start p-2 border-dark">
+                            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" alt="10px"></a>
+                            </div>
+                            <div class="border-start p-2 border-dark">
+                            <a href="https://www.linkedin.com/in/yanroh/"><img src="./assets/png/Linkedin.png" alt="10px"></a>
+                            </div>
+                            <div class="border-start p-2 border-dark">
+                                <a href="https://www.freepik.com/author/yanroh"><img src="./assets/svg/web(YANROH)-assets-54.svg" alt="10px"></a>
+                            </div>
+                            <div>
+                            <a href="mailto:hola@yanroh.me"><img src="./assets/png/web(YANROH)-assets-13.png" width="250px"></a>
+                            </div>
+                        </div>
+                        <div class="d-md-none d-inline">
+                            <img src="./assets/png/Group (11).png" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </nav>
         </div>
     </header>
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-6 d-flex align-items-center justify-content-center">
+                <div class="col-md-6 d-flex align-items-center justify-content-center" style="background-image: url('./assets/png/Recurso 4.png');background-repeat: no-repeat; background-position-x: 57vw; background-position-y: bottom; background-size: contain;">
                     <div class="row">
                         <div class="col-6">
-                            <div class="d-flex justify-content-start">
+                            <div class="d-flex justify-content-start d-none d-md-inline">
                                 <img src="./assets/png/web(YANROH)-assets-05.png" width="80px" height="20px">
                             </div>
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center d-none d-md-inline">
                                 <img src="./assets/png/web(YANROH)-assets-06.png" width="120px" height="30px">
                             </div>
                         </div>    
-                        <div class="col-6"> 
+                        <div class="col-6 d-none d-md-inline"> 
                             <img src="./assets/png/Group (6).png" width="180px" height="180px">
                         </div>
-                    </div>    
-                    <div>
+                    </div>  
+                    <div class="d-md-none d-inline row d-flex">
+                        <div class="column">
+                            <img class="" src="./assets/png/web(YANROH)-assets-05.png" width="80px" height="30px">
+                            <img class="" src="./assets/png/web(YANROH)-assets-06.png" width="110px" height="35px">
+                        </div>
+                        <div>
+                            <img src="./assets/png/Group (6).png" width="140px" height="140px">
+                        </div>
+                    </div>  
+                    <div class="d-none d-md-inline">
                         <ul class="infobasica d-flex">
                             <li class="pr">PORTAFOLIO</li>
                             <li><img src="./assets/png/web(YANROH)-assets-16.png" width="35px"><span>VIDEOREEL</span></li>
                             <li><img src="./assets/png/web(YANROH)-assets-15.png" width="35px"><span>DESCARGAR MI CV.PDF</span></li>
                         </ul> 
                     </div> 
+                    <div class="d-md-none flex-column d-flex justify-content-flex-start ">
+                        <div class="pr">PORTAFOLIO</div>
+                        <div class="sp"><img src="./assets/png/web(YANROH)-assets-16.png" width="50px"><span>VIDEOREEL</span></div>
+                        <div class="sp"><img src="./assets/png/web(YANROH)-assets-15.png" width="50px"><span>DESCARGAR MI CV.PDF</span></div>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <img class="imagen04" src="./assets/png/Recurso 4.png" width="400px">
+                <div class="col-md-6">
                 </div>
             </div>
         </div> 
     </section>
     <section id="sobre-mi">
-        <div class="conteiner row">
+        <div class="container row">
             <div class="col-6 lee-sobre-mi">
                 <div class="imgj">
                     <img class="imagen19" src="./assets/png/web(YANROH)-assets-19.png" width="280px">
@@ -74,9 +111,11 @@
             <div class="col-6">
                 <div class="titulo">
                     <div>
-                        <h4>0.1. LEE SOBRE MI</h4>
+                        <h4 class="font-subtitle-responsive">01. LEE SOBRE MI</h4>
                         <h1>JEAN ROBERT</h1>
+                        <div class="cts">
                         <h2>RIVADENEIRA</h2> 
+                        </div>
                     </div> 
                     <div>
                         <nav class="nav">
@@ -101,7 +140,24 @@
                             <div class="tab-pane fade" id="pills-estudios" role="tabpanel" aria-labelledby="pills-estudios-tab" tabindex="0">Aquí debería ir información sobre sus estudios</div>
                             <div class="tab-pane fade" id="pills-habilidades" role="tabpanel" aria-labelledby="pills-habilidades-tab" tabindex="0">Aquí información sobre las habilidades de Jean</div>
                         </div>
-                        <!--mail, llámame, descarga y deja un mensaje-->
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="d-flex flex-column flex-sm-row">
+                                <ul class="d-flex flex-column flex-sm-row">
+                                    <li>
+                                        <p>EMAIL:</p>
+                                        <a href="mailto:hola@yanroh.me"><p>hola@yanroh.me</p></a>
+                                    </li>
+                                    <li>
+                                       <p>LLÁMAME:</p>
+                                       <a href="https://api.whatsapp.com/send/?phone=51961607474&text&type=phone_number&app_absent=0"><p>(+51)961607474</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row">   
+                                <button class="btn btn-danger font-buttom-responsive">DESCARGAR CV</button>
+                                <button class="btn btn-outline-success font-buttom-responsive">DEJA UN MENSAJE</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div> 
@@ -109,14 +165,16 @@
     </section>
     <section id="portafolio">
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="col-6 row d-flex">
-                    <h4>0.2. PORTAFOLIO</h4>
-                    <h2>PROYECTOS</h2> 
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                <div class="col-md-6 row d-flex">
+                    <h4 class="font-subtitle-responsive">02. PORTAFOLIO</h4>
+                    <div class="cts">
+                    <h2>PROYECTOS</h2>
+                    </div> 
                     <h1>RECIENTES</h1>
                 </div>
-                <div class="col-6 botone">
-                    <a href="">MOSTRAR OTROS</a>
+                <div class="col-md-6">
+                    <button class="btn btn-danger font-buttom-responsive">MOSTRAR OTROS</button>
                 </div>
             </div>
             <div class="proyect-galery row">
@@ -145,13 +203,15 @@
     </section>
     <section id="servicios">
         <div class="row d-flex justify-content-center">
-            <div class="row col-6">
-                <h4>0.3. SERVICIOS</h4>
+            <div class="row col-md-6">
+                <h4 class="font-subtitle-responsive">03. SERVICIOS</h4>
                 <h1>EXPERIENCIA</h1> 
-                <h2>DIGITAL</h2>
+                <div class="cts">
+                    <h2>DIGITAL</h2>
+                </div>
             </div> 
-            <div class="row"> 
-                <div class="row col-6 d-flex align-items-center justify-content-center">    
+            <div class="flex-column flex-sm-row d-flex"> 
+                <div class="row col-md-6 d-flex align-items-center justify-content-center">    
                     <div class="lista">
                         <ul>
                             <li><a href="">DISEÑO PUBLICITARIO</a></li>
@@ -167,7 +227,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <img src="./assets/png/web(YANROH)-assets-28.png" width="400px">
                 </div>
             </div> 
@@ -176,9 +236,11 @@
     <section class="certificaciones">
         <div class="container row">
             <div>
-                <h4>0.4. CERTIFICACIONES</h4>
-                <h1>CURSOS Y</h1> 
-                <h2>CERTIFICACIONES</h2>
+                <h4 class="font-subtitle-responsive">04. CERTIFICACIONES</h4>
+                <h1 class="font-title-responsive">CURSOS Y</h1> 
+                <div class="cts">
+                <h2 class="font-title-responsive">CERTIFICACIONES</h2>
+                </div>
             </div>    
             <div class="d-flex cursos"> 
                 <div>
@@ -228,17 +290,19 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <H4>0.5. TESTIMONIAL</H4>
-                    <h2>TESTIMONIOS</h2> 
-                    <h1>DE CLIENTES</h1>
+                    <h4 class="font-subtitle-responsive">05. TESTIMONIAL</h4>
+                    <div class="cts">
+                        <h2 class="font-title-responsive">TESTIMONIOS</h2> 
+                    </div>
+                    <h1 class="font-title-responsive">DE CLIENTES</h1>
                 </div>    
                 <div>
-                    <p class="ct">CONTACTAME</p>
+                    <button class="btn btn-outline-success font-buttom-responsive">CONTACTAME</button>
                 </div> 
             </div>       
             <div class="card d-flex align-items-center">
-                <div class="card-body testimonios-de-clientes">
-                    <div class="card-title d-flex column">
+                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
+                    <div class="card-title d-flex flex-column flex-md-row">
                         <div class="col-3 d-flex justify-content-center">
                             <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
                         </div>
@@ -253,8 +317,8 @@
                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>
                     </div>
                 </div>
-                <div class="card-body testimonios-de-clientes">
-                    <div class="card-title d-flex column">
+                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
+                    <div class="card-title d-flex flex-column flex-md-row">
                         <div class="col-3 d-flex justify-content-center">
                             <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
                         </div>
@@ -269,8 +333,8 @@
                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>
                     </div>
                 </div>
-                <div class="card-body testimonios-de-clientes">
-                    <div class="card-title d-flex column">
+                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
+                    <div class="card-title d-flex flex-column flex-md-row">
                         <div class="col-3 d-flex justify-content-center">
                             <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
                         </div>
@@ -331,18 +395,19 @@
                 <div>
                     <p>Lima, Perú</p>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <h1 class="cro">HOLA@YANROH.ME</h1>
+                <div class="d-flex justify-content-center font-responsive">
+                   <a href="mailto:hola@yanroh.me"><h1 class="cro font-responsive">HOLA@YANROH.ME</h1></a>
                 </div>
                 <div>
-                    <p>(+51) 961607474</p>
+                    <a href=""><p>(+51) 961607474</p></a>
                 </div>    
                 <div class="d-flex justify-content-center">   
                     <ul class="redes-sociales">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="">Linkedin</a></li>
+                        <li><a href="https://www.facebook.com/rivajeanr">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/yanroh.dg/">Instagram</a></li>
+                        <li><a href="https://www.behance.net/yanroh">Behance</a></li>
+                        <li><a href="https://www.linkedin.com/in/yanroh/">Linkedin</a></li>
+                        <li><a href="https://www.freepik.com/author/yanroh">Freepik</a></li>
                     </ul>
                 </div> 
             </div>   
@@ -353,10 +418,21 @@
              <p>©Copyright 2024 by <strong>YanRoh</strong> All Rights Reserved</p>
         </div>
         <div class="logo-redes-foot"> 
-            <img src="./assets/png/Facebook.png" alt="">
-            <img src="./assets/png/Instagram.png" alt="">
-            <img src="./assets/png/Be.png" alt="">
-            <img src="./assets/png/Linkedin.png" alt="">
+            <div>
+                <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" alt=""></a>
+            </div>
+            <div>
+            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" alt=""></a>
+            </div>
+            <div>
+            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" alt=""></a>
+            </div>
+            <div>
+            <a href="https://www.linkedin.com/in/yanroh/"><img src="./assets/png/Linkedin.png" alt=""></a>
+            </div>
+            <div>
+                <a href="https://www.freepik.com/author/yanroh"><img src="" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
