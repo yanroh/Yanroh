@@ -256,10 +256,27 @@ button.nav-link:hover {
     color: white;
 }
 .botone:hover {
-    background: red;
+    background:#ae174a;
 }
 .card .card-img {
-    
+    width: 288.24px;
+    height: 288.24px;
+}
+.card-img-overlay.d-flex.row.align-content-end {
+    margin: 10px;
+}
+.card-img-overlay.d-flex.row.align-content-end h4 {
+    font-size: 6px;
+}
+.card-img-overlay.d-flex.row.align-content-end p {
+    font-size: 12px;
+}
+.carousel-control-prev-icon {
+    background-image: url("/assets/png/Group12.png");
+    transform: rotate(180deg);
+}
+.carousel-control-next-icon {
+    background-image: url("/assets/png/Group12.png");
 }
 .proyect-galery {
     flex-wrap: nowrap;
