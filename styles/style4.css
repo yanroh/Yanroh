@@ -63,6 +63,35 @@ header {
 .menu li:hover .menu-interno {
     display: block;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.menu.d-flex.justify-content-center.align-items-center {
+    max-width: 500px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 400px;
+    padding: 0;
+    font-family: 'morgant';
+    font-size: 8.28px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none; 
+    justify-content: space-around;
+}
+.menu li a:hover {
+    background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.row.border-bottom.border-black {
+    max-width: 1195.41px;
+}
 .encabezado {
     display: flex;
     flex-direction: column;

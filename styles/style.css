@@ -6,20 +6,25 @@
     font-family: 'modius';
     src: url('/fonts/Gotham/Modius Bold.ttf') format('opentype');
   }
-  @font-face {
+@font-face {
     font-family: 'gotham';
     src: url('/fonts/Gotham/GOTHAM BOOK.TTF') format('opentype');
     font-weight: normal;
   }
-  @font-face {
+@font-face {
     font-family:'gothamt';
     src: url('/fonts/Gotham/Gotham-Light.otf') format('opentype');
     font-weight: lighter;
   }
+  @font-face {
+    font-family:'gotham';
+    src: url('/fonts/Gotham/Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+  }
 * {
-color: white;
-box-sizing: border-box;
-flex-wrap: wrap;
+    color: white;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 body {
     background: #090E38;
@@ -53,17 +58,6 @@ header {
     background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-background-clip: text;
     color: transparent; 
-}
-.menu-interno {
-    display: none;
-    color: white;
-    position: absolute;
-    list-style: none;
-    width: 200px;
-    background-color: black;
-}
-.menu li:hover .menu-interno {
-    display: block;
 }
 .row.border-bottom.border-black {
     max-width: 1195.41px;
@@ -110,6 +104,16 @@ header {
     border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
     justify-content: center;
     width: 100px;
+}
+.col-8.d-flex.align-items-center.justify-content-center {
+    height: 230px;
+    width: 400px;
+}
+.nav.border-bottom.border-white.border-opacity-10 {
+    width: 300px;
+}
+.tab-content {
+    width: 300px;
 }
 #sobre-mi {
     display: flex;
@@ -199,6 +203,44 @@ button.nav-link:hover {
     margin: 25px 0;
     font-family: 'gothamt';
     font-size: 7px;
+}
+.btn.btn-danger {
+    font-family: 'morgant';
+    font-size: 7.08px;
+    border-radius: 0%;
+    background-color: #E11E5E;
+}
+.btn.btn-danger:hover {
+    background:#ae174a;
+}
+.btn.btn-outline-success {
+    font-family: 'morgant';
+    font-size: 7.08px;
+    color: white;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
+    background-color: #171C44;
+}
+.btn.btn-outline-success:active {
+    background: #171C44;
+}
+.d-flex.row ul {
+    font-family: 'morgant';
+    font-size: 8px;
+    list-style: none;
+}
+.d-flex.row li {
+    width: 190px;
+}
+.d-flex.row p {
+    margin: 0;
+}
+.ell {
+    font-family: 'modius';
+    font-size: 10px;
+}
+.d-flex.row .col-6 {
+    width: 190px;
 }
 #portafolio {
     display: flex;
@@ -337,37 +379,53 @@ button.nav-link:hover {
     font-size: 27.68px;
     width: fit-content;
 }
-.row.col-6.d-flex.align-items-center.justify-content-center div {
-    font-family: 'gothamt';
-    font-weight: lighter;
-    font-size: 7px;
+.row.col-6.d-flex.align-items-center.justify-content-center .lista {
     display: flex;
     justify-content: flex-end;
+    height: 280px;
 }
 .row.col-6.d-flex.align-items-center.justify-content-center li {
-    padding: 5px 0;
     list-style: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 .row.col-6.d-flex.align-items-center.justify-content-center li a {
+    font-family: 'gotham';
+    font-size: 8px;
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center li a span {
+    display: none;
 }
 .row.col-6.d-flex.align-items-center.justify-content-center li a:hover {
+    font-family: 'gotham';
+    font-size: 8px;
     font-weight: bold;
+    margin-left: -45px;
+    height: 28px;
+    display: flex;
+    align-items: baseline;
+}
+.row.col-6.d-flex.align-items-center.justify-content-center li a:hover span {
+    display: inline;
 }
 .redes-sociales {
     max-width: 700px;
     display: flex;
     list-style: none;
 }
-.redes-sociales li {
+.d-flex.justify-content-center .redes-sociales li {
     padding: 0 5px;
     font-family: 'gothamt';
     font-size: small;
+    width: fit-content;
 }
-.redes-sociales a{
+.redes-sociales a {
     text-decoration: none;
     color: white;
 }

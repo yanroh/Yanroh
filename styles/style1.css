@@ -33,18 +33,20 @@ body {
     font-family: 'gotham';
 }
 header {
-    max-width: 1500px;
     display: flex;
     justify-content: space-between;
-    font-family: 'morgant';
-    font-size: x-small;
 }
-.menu {
+.menu.d-flex.justify-content-center.align-items-center {
+    max-width: 500px;
+}
+.menu ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
-    width: 500px;
+    width: 400px;
     padding: 0;
+    font-family: 'morgant';
+    font-size: 8.28px;
 }
 .menu li a {
     color: white;
@@ -52,20 +54,12 @@ header {
     justify-content: space-around;
 }
 .menu li a:hover {
-    background: linear-gradient(90deg, rgb(221, 189, 27), rgb(93, 193, 185));
+    background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-background-clip: text;
     color: transparent; 
 }
-.menu-interno {
-    display: none;
-    color: white;
-    position: absolute;
-    list-style: none;
-    width: 200px;
-    background-color: black;
-}
-.menu li:hover .menu-interno {
-    display: block;
+.row.border-bottom.border-black {
+    max-width: 1195.41px;
 }
 .sobre-mi {
     background: #171C44;
@@ -287,9 +281,7 @@ header {
     font-family: 'modius';
     font-size: medium;
 }
-#contacto p {
-    font-family: 'gothamt';
-}
+
 .redes-sociales {
     max-width: 700px;
     display: flex;
@@ -304,19 +296,43 @@ header {
     text-decoration: none;
     color: white;
 }
+#contacto {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacto .container {
+    width: 1195.41px;
+}
+#contacto h3 {
+    font-family: 'morgant';
+    font-size: 11.46px;
+}
+#contacto p {
+    font-size: 9.99px;
+}
 footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-family: 'gothamt';
+    height: 48.28px;
 }
 .logos-redes-foot {
    justify-content: end;
 }
-#contacto h1{
+.logos-redes-foot div {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+}
+footer p {
+    font-size: 6.63px;
+}
+.d-flex.justify-content-center .cro {
     font-family: 'modius';
-    font-size: 50px;
-    width: 720px;
+    font-size: 43px;
+    width: fit-content;
     background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
