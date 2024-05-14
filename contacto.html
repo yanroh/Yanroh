@@ -23,7 +23,7 @@
                             <li><a href="/contacto.html">CONTACTO</a></li>
                         </ul>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center">
                         <div class="border-start p-2 border-white border-opacity-10">
                             <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="10px" height="20px"></a>
                         </div>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </header>
-    <section class="titulo">
+    <section class="titulo mt-sm-2 mb-sm-5">
         <div class="container">
             <div class="d-flex justify-content-center text-center my-4">
                 <h3>#CONTACTO</h3>
@@ -57,14 +57,14 @@
     </section>
     <section class="info">
         <div class="container">
-            <div class="row d-flex justify-content-center mb-5">
-                <div class="contacto me-sm-5 p-5">
+            <div class="row d-flex col-12 justify-content-center mb-5">
+                <div class="contacto col-12 col-sm-4 m-2 me-sm-5 p-5">
                     <img src="./assets/png/contact-icon 1.png" width="65px">
                     <h5 class="my-3">CONTACTO</h5>
                     <p class="p-0 m-0">HOLA@YANROH.ME</p>
                     <p class="p-0 m-0">(+51) 961607474</p>
                 </div>
-                <div class="redes py-5">
+                <div class="redes m-2 col-12 col-sm-4 py-5">
                     <img src="./assets/png/contact-icon.png" width="70px" class="pt-3">
                     <h5 class="pt-4 pb-2 m-0">REDES SOCIALES</h5>
                     <p class="m-0 p-2">SÍGUEME EN:</p>
@@ -90,34 +90,41 @@
         </div>
     </section>
     <section class="container">
-        <div class="form my-3 d-flex justify-content-center">
-            <div class="formulario-contacto">
-                <h4>ENVIAR UN MENSAJE</h4>
+        <div class="form my-5 d-flex justify-content-center">
+            <div class="col-sm-9 p-5 border border-white border-opacity-25">
+                <h4 class="py-sm-1">ENVIAR UN MENSAJE</h4>
                 <form action="" method="get" autocomplete="off">
-                    <div class="form-group">
-                        <div class="form-content">
+                    <div class="row g-sm-3 py-sm-2">
+                        <div class="form-content col-sm">
                             <label for="name"></label>
                             <input type="text" id="name" name="name" placeholder="Nombre">
                         </div>
-                        <div class="form-content">
+                        <div class="form-content col-sm">
                             <label for="name"></label>
                             <input type="email" id="email" name="email" placeholder="Correo">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="form-content">
+                    <div class="row g-sm-3 py-sm-2">
+                        <div class="form-content col-sm">
                             <label for="fono"></label>
                             <input type="tel" id="fono" name="fono" placeholder="Teléfono">
                         </div>
-                        <div class="form-content">
+                        <div class="form-content col-sm">
                             <label for="name"></label>
                             <input type="text" id="email" name="email" placeholder="Compañía">
                         </div>
                     </div>
-                    <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <p>Estoy sujeto a los términos del Servicio. Acepto la Política de privacidad.</p>
-                    <input class="btn" type="submit" name="contact" value="ENVIAR MENSAJE">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Mensaje"></textarea>
+                    <div class="form-check py-2 py-sm-2 px-sm-4">
+                        <input class="form-check-input border border-white border-opacity-10" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Estoy sujeto a los términos del Servicio. Acepto la Política de privacidad.
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-danger">ENVIAR MENSAJE</button>
+                    </div>
                 </form>
             </div>
         </div>

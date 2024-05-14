@@ -134,29 +134,17 @@ header .container-fluid {
     font-family: 'gothamt';
     letter-spacing: 1px;
 }
-.forma {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.col-12.p-5.border.border-white.border-opacity-25 {
+    max-width: 850px;
 }
-.formulario-contacto {
-    width: 700px;
-    margin: 20px;
-    padding: 20px;
-    border: 0.5px solid;
-    border-color: white;
-    text-align: center;
-}
-.formulario-contacto h4 {
+.py-sm-1 {
     font-family: 'modius';
+    font-size: 18px;
 }
 .form-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-.form-content h4 {
-    
 }
 form {
     text-align: left;
@@ -182,17 +170,45 @@ input, textarea {
     outline: none;
     color: white;
 }
+.col-sm-8 .mb-3 .form-control {
+    background-color: #171C44;
+}
+.form-check {
+
+}
+.form-check-input {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    background: transparent;
+    background-image: var(--bs-form-check-bg-image);
+
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
+.form-check-label {
+    font-family: 'Gothamth';
+    font-size: 12px;
+}
 ::placeholder {
 
 }
 .btn {
     padding: 17px 15px;
     width: 200px;
-    text-transform: capitalize;
     background: #E11E5E;
     cursor: pointer;
     font-family: 'morgant';
     font-size: xx-small;
+}
+.btn.btn-danger {
+    font-family: 'morgant';
+    width: 150px;
+    height: 40px;
+    font-size: 8px;
+    border-radius: 0%;
+    background-color: #E11E5E;
 }
 #contacto {
     display: flex;
