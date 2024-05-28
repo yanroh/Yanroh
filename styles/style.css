@@ -487,12 +487,7 @@ button.nav-link:hover {
     font-size: 30px;
     width: fit-content;
 }
-.cursos {
-    flex-wrap: nowrap;
-    max-width: 100%;
-    overflow-x: scroll;
-}
-.cursos .std {
+.certificaciones .std {
     position: relative;
     display: flex;
     justify-content: center;

@@ -9,38 +9,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
         @media (max-width: 767px) {
-		.carousel-inner .carousel-item > div {
-			display: none;
+		    #recipeCarousel .carousel-inner .carousel-item > div {
+			    display: none;
+		    }
+		    #recipeCarousel .carousel-inner .carousel-item > div:first-child {
+			    display: block;
+		    }
+	    }
+        @media (max-width: 767px) {
+            #recipeCarousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel .carousel-inner .carousel-item-next {
+			transform: translateX(100%);
 		}
-		.carousel-inner .carousel-item > div:first-child {
-			display: block;
-		}
-	}
 
-	.carousel-inner .carousel-item.active,
-	.carousel-inner .carousel-item-next,
-	.carousel-inner .carousel-item-prev {
-		display: flex;
-	}
+		#recipeCarousel .carousel-inner .carousel-item-start.active, 
+		#recipeCarousel .carousel-inner .carousel-item-prev {
+			transform: translateX(-100%);
+		}
+	    }
+
+	    #recipeCarousel .carousel-inner .carousel-item.active,
+	    #recipeCarousel .carousel-inner .carousel-item-next,
+	    #recipeCarousel .carousel-inner .carousel-item-prev {
+		    display: flex;
+	    }
+        
+        @media (max-width: 767px) {
+		    #courses-carousel .carousel-inner .carousel-item > div {
+			    display: none;
+		    }
+		    #courses-carousel .carousel-inner .carousel-item > div:first-child {
+			    display: block;
+		    }
+	    }
+        @media (max-width: 767px) {
+		    #courses-carousel .carousel-inner .carousel-item-end.active,
+        #courses-carousel .carousel-inner .carousel-item-next {
+            transform: translateX(100%);
+        }
+
+        #courses-carousel .carousel-inner .carousel-item-start.active, 
+        #courses-carousel .carousel-inner .carousel-item-prev {
+            transform: translateX(-100%);
+        }
+	    }
+        #courses-carousel .carousel-inner .carousel-item.active,
+	    #courses-carousel .carousel-inner .carousel-item-next,
+	    #courses-carousel .carousel-inner .carousel-item-prev {
+		    display: flex;
+            justify-content: center;
+	    }
 
 	/* medium and up screens */
 	@media (min-width: 768px) {
 
-		.carousel-inner .carousel-item-end.active,
-		.carousel-inner .carousel-item-next {
+		#recipeCarousel .carousel-inner .carousel-item-end.active,
+		#recipeCarousel .carousel-inner .carousel-item-next {
 			transform: translateX(25%);
 		}
 
-		.carousel-inner .carousel-item-start.active, 
-		.carousel-inner .carousel-item-prev {
+		#recipeCarousel .carousel-inner .carousel-item-start.active, 
+		#recipeCarousel .carousel-inner .carousel-item-prev {
 			transform: translateX(-25%);
 		}
 	}
 
-	.carousel-inner .carousel-item-end,
-	.carousel-inner .carousel-item-start { 
+	#recipeCarousel .carousel-inner .carousel-item-end,
+	#recipeCarousel .carousel-inner .carousel-item-start { 
 		transform: translateX(0);
 	}
+
+    @media (min-width: 768px) {
+
+        #courses-carousel .carousel-inner .carousel-item-end.active,
+        #courses-carousel .carousel-inner .carousel-item-next {
+            transform: translateX(278px);
+        }
+
+        #courses-carousel .carousel-inner .carousel-item-start.active, 
+        #courses-carousel .carousel-inner .carousel-item-prev {
+            transform: translateX(-278px);
+        }
+    }
+    #courses-carousel .carousel-inner .carousel-item-end,
+	#courses-carousel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}   
+
     </style>
 </head>
 <body>
@@ -433,80 +488,106 @@
                 </div>
                 <h1 class="font-title-responsive">CURSOS Y</h1> 
                 <h2 class="font-title-responsive">CERTIFICACIONES</h2>
-            </div>    
-            <div class="d-flex cursos"> 
-                <div class="std" >
-                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">UDEMY</span>
-                        <span class="descripcion">UX: MÁSTER EN DISEÑO WEB Y EXPERIENCIA DE USUARIO</span>
-                        <span class="fecha">JULIO 2022</span>
+            </div>         
+            <div id="courses-carousel" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">UDEMY</span>
+                                <span class="descripcion">UX: MÁSTER EN DISEÑO WEB Y EXPERIENCIA DE USUARIO</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">CAMPUS ROMERO</span>
+                                <span class="descripcion">MARKETING DIGITAL PARA REDES SOCIALES</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">ADOBE</span>
+                                <span class="descripcion">A DOBE CERTIFIED ASSOCIATE VISUAL COMMUNICATION USING ADOBE PHOTOSHOP CS4</span>
+                                <span class="fecha">SEPTIEMBRE 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">NETZUN</span>
+                                <span class="descripcion">ESPECIALIZACIÓN EN GROWTH MARKETING</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">MEDIAPRO CREATIVE & TRAINING CENTER</span>
+                                <span class="descripcion">DISEÑO VECTORIAL AVANZADO</span>
+                                <span class="fecha">JUNIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">NETZUN</span>
+                                <span class="descripcion">ESPECIALIZACIÓN EN PHOTOSHOP E ILUSTRATOR</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">NETZUN</span>
+                                <span class="descripcion">ESPECIALIZACIÓN EN FACEBOOK ADS Y GOOGLE ADS</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">UDEMY</span>
+                                <span class="descripcion">DISEÑO UX: EXPERIENCIA DE USUARIO UX/UI +FIGMA 2022</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="std">
+                            <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                            <div>
+                                <span class="nombre-curso">UDEMY</span>
+                                <span class="descripcion">UX WRITING: DISEÑO DE CONTENIDO Y EXPERIENCIA DE USUARIO</span>
+                                <span class="fecha">JULIO 2022</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">CAMPUS ROMERO</span>
-                        <span class="descripcion">MARKETING DIGITAL PARA REDES SOCIALES</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">ADOBE</span>
-                        <span class="descripcion">A DOBE CERTIFIED ASSOCIATE VISUAL COMMUNICATION USING ADOBE PHOTOSHOP CS4</span>
-                        <span class="fecha">SEPTIEMBRE 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">NETZUN</span>
-                        <span class="descripcion">ESPECIALIZACIÓN EN GROWTH MARKETING</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">MEDIAPRO CREATIVE & TRAINING CENTER</span>
-                        <span class="descripcion">DISEÑO VECTORIAL AVANZADO</span>
-                        <span class="fecha">JUNIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">NETZUN</span>
-                        <span class="descripcion">ESPECIALIZACIÓN EN PHOTOSHOP E ILUSTRATOR</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">NETZUN</span>
-                        <span class="descripcion">ESPECIALIZACIÓN EN FACEBOOK ADS Y GOOGLE ADS</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">UDEMY</span>
-                        <span class="descripcion">DISEÑO UX: EXPERIENCIA DE USUARIO UX/UI +FIGMA 2022</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
-                <div class="std">
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
-                    <div>
-                        <span class="nombre-curso">UDEMY</span>
-                        <span class="descripcion">UX WRITING: DISEÑO DE CONTENIDO Y EXPERIENCIA DE USUARIO</span>
-                        <span class="fecha">JULIO 2022</span>
-                    </div>
-                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#courses-carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#courses-carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
         </div>  
     </section>
@@ -704,22 +785,35 @@
     </footer>
 
     <script>
-        let items = document.querySelectorAll('.carousel .carousel-item')
+        let items = document.querySelectorAll('#recipeCarousel.carousel .carousel-item')
 
-items.forEach((el) => {
-    const minPerSlide = 4
-    let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
-        if (!next) {
-    // wrap carousel by using first child
-    next = items[0]
-}
-let cloneChild = next.cloneNode(true)
-el.appendChild(cloneChild.children[0])
-next = next.nextElementSibling
-}
-})
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
 
+        let coursesItems = document.querySelectorAll('#courses-carousel.carousel .carousel-item')
+
+        coursesItems.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+                    next = coursesItems[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
 
     function displaySlide(id) { 
         Array.from(document.getElementsByClassName('slide-servicios')).forEach((slide) => slide.classList.add('d-none'));
