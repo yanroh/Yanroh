@@ -16,74 +16,95 @@
     src: url('/fonts/Gotham/GothamNarrow-Thin.otf') format('opentype');
     font-weight: lighter;
   }
+  @font-face {
+    font-family:'gothamth';
+    src: url('/fonts/Gotham/Gotham-Thin.otf') format('opentype');
+    font-weight: thin;
+  }
 * {
     color: white;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
 body {
-    background: #090E38;
+    background: #161A42;
     background-size: cover;
     flex-wrap: wrap;
-    margin: 20px;
     font-family: 'gotham';
 }
 header {
-    max-width: 1500px;
     display: flex;
     justify-content: space-between;
-    font-family: 'morgant';
-    font-size: x-small;
+    background:#090E38;
 }
-.menu {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    width: 500px;
+header .navbar {
+    width: 100%;
+}
+nav ul {
+    width: 780px;
+    max-width: 1000px;
     padding: 0;
+    font-family: 'morgant';
+    font-size: 30px;
 }
-.menu li a {
+.nav-link {
     color: white;
-    text-decoration: none; 
-    justify-content: space-around;
 }
-.menu li a:hover {
-    background: linear-gradient(90deg, rgb(221, 189, 27), rgb(93, 193, 185));
+.nav-link:hover {
+    background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-background-clip: text;
     color: transparent; 
 }
-.menu-interno {
-    display: none;
-    color: white;
-    position: absolute;
-    list-style: none;
-    width: 200px;
-    background-color: black;
+.navbar-toggler:focus {
+    box-shadow: none;
 }
-.menu li:hover .menu-interno {
-    display: block;
+nav .border-start {
+    height: 50px;
+}
+.navbar-collapse .btn.btn-danger {
+    font-size: 12px;
+    width: 250px;
+    height: 50px;
+}
+.ell {
+    font-family: 'modius';
+    font-size: 12px;
+}
+.datos-de-contacto li {
+    width: 250px;
+}
+.datos-de-contacto p {
+    font-size: 10px;
+    margin: 0px;
+}
+.btn.btn-danger {
+    font-family: 'morgant';
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    border-radius: 0%;
+    background-color: #E11E5E;
+}
+.btn.btn-danger:hover {
+    background:#ae174a;
 }
 .encabezado {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.encabezado div {
-    width: 700px;
+    max-width: 1000px;
+    background: #161A42;
 }
 .encabezado h5 {
     font-family: 'modius';
-    font-size: xx-small;
-    width: 100px;
+    font-size: 18px;
+    width: fit-content;
     background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.encabezado h2 {
+.encabezado h1 {
     font-family: 'morgant';
 }
-.encabezado p {
-    font-family: 'gothamt';
+.encabezado h6 {
+    font-family: 'gothamth';
 }
 .info {
     display: flex;
@@ -99,22 +120,57 @@ header {
     margin: 0;
     padding: 0;
 }
-.info div {
-    width: 700px;
-
+.proyecto h6 {
+    font-family: 'gotham';
 }
 #contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #161A42;
 }
-#contacto .container {
-    padding: 70px 0 0 0;
+#contacto h3 {
+    font-family: 'modius';
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+#contacto p {
+    font-family: 'gothamth';
+    font-size: 17px;
+}
+.page-link {
+    background: #161A42;
+    font-family: 'gotham';
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+.page-item h5 {
+    font-family: 'gothamth';
+}
+.page-link:hover {
+    color: white;
+    background: #161A42;
+    box-shadow: none;
+}
+.page-link:visited {
+    color: white;
+    background: #161A42;
+    border: none;
+    box-shadow: #161A42;
+}
+.page-link:focus {
+    color: white;
+    background: #161A42;
+    border: none;
+    box-shadow: none;
 }
 .redes-sociales {
     max-width: 700px;
     display: flex;
     list-style: none;
+    padding: 0;
 }
 .redes-sociales li {
     padding: 0 5px;
@@ -125,28 +181,57 @@ header {
     text-decoration: none;
     color: white;
 }
+.d-flex.justify-content-center .redes-sociales li {
+    padding: 14px;
+    font-family: 'gothamth';
+    font-size: 16px;
+    width: fit-content;
+    letter-spacing: 0.5px;
+}
 footer {
-    font-family: 'gothamt';
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background:#090E38;
 }
-.logos-redes-foot {
+.logos-redes-foot.d-flex {
    justify-content: end;
 }
-#contacto h1{
+.px-1 {
+    height: 30px;
+    width: 30px;
+}
+footer p {
+    font-family: 'gothamth';
+    font-size: 11px;
+    letter-spacing: 0.4px;
+}
+.d-flex.justify-content-center .cro {
     font-family: 'modius';
-    font-size: 50px;
-    width: 720px;
+    font-size: 68px;
+    width: fit-content;
     background: linear-gradient(90deg, rgb(255, 107, 107), rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    margin: 0;
 }
-#contacto h3 {
-    font-family: 'modius';
-    font-size: medium;
+.d-flex.align-items-center.justify-content-around.border-top.border-white.border-opacity-10 {
+    height: 60px;
 }
-#contacto p {
-    font-family: 'gothamt';
+.font-ul-responsive {
+    font-size: 30px !important;
+    @media (min-width: 576px) {
+        font-size: 12px !important;
+    }
+}
+.font-responsive {
+    font-size: 25px !important;
+    @media (min-width: 576px) {
+        font-size: 68px !important;
+    }
+}
+.font-subtitle-responsive {
+    font-size: 12px !important;
+    @media (min-width: 576px) {
+        font-size: 16px !important;
+    }
 }

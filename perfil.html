@@ -6,135 +6,354 @@
     <title>Yan-Roh</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style1.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="./assets/png/YANROH.png" width="76px" height="38px">
-        <ul class="menu">
-            <li><a href="/index.html">INICIO</a></li>
-            <li> <a href="/perfil.html">SOBRE MI</a> </li>
-            <li><a href="/portafolio.html">PORTAFOLIO</a></li>
-            <li><a href="/contacto.html">CONTACTO</a></li>
-        </ul>
-        <div>
-            <img src="./assets/png/Facebook.png" alt="10px">
-            <img src="./assets/png/Instagram.png" alt="">
-            <img src="./assets/png/Be.png" alt="">
-            <img src="./assets/png/Linkedin.png" alt="">
-        <a href="mailto:hola@yanroh.me">
-            <img src="./assets/png/web(YANROH)-assets-13.png" width="200px">
-        </a>
-        </div>
+        <nav class="navbar navbar-expand-sm p-0">
+            <div class="container-fluid border-bottom border-white border-opacity-10">
+              <a class="navbar-brand p-4 p-sm-0 ps-sm-5" href="#"><img src="./assets/png/YANROH.png" width="65px" height="35px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><img src="./assets/png/Group (11).png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="d-flex justify-content-end ms-4 pt-5 my-5 pt-sm-0 my-sm-0 navbar-nav font-ul-responsive">
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/perfil.html">SOBRE MI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/portafolio.html">PORTAFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <div class="d-sm-none">
+                    <div class="pb-5">
+                        <button class="btn btn-danger">DESCARGAR CV</button>
+                    </div>
+                    <div class="d-flex flex-column py-5 flex-sm-row">
+                        <ul class="d-flex flex-column flex-sm-row datos-de-contacto">
+                            <li class="row">
+                                <div class="col-2">
+                                    <img src="assets/png/web(YANROH)-assets-09.png" width="30px">
+                                </div>
+                                <div class="col-10 mb-3">
+                                    <p class="ell">EMAIL</p>
+                                    <P>HOLA@YANROH.ME</P>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2">
+                                    <img src="assets/png/web(YANROH)-assets-10.png" width="30px">
+                                </div>
+                                <div class="col-10">
+                                    <p class="ell">LLÁMAME</p>
+                                    <p>(+51)961607474</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-redes-foot d-flex my-3"> 
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="9px" height="15px"></a>
+                        </div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="16px" height="16px"></a>
+                        </div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center"> 
+                            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="18px" height="12px"></a>
+                        </div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="15px" height="15px"></a>
+                        </div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center d-none d-md-inline-flex ms-5">
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="10px" height="20px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="20px" height="20px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="22px" height="15px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="18px" height="18px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="18x" height="15px"></a>
+                    </div>
+                    <div>
+                        <a href="mailto:hola@yanroh.me"><img src="./assets/png/web(YANROH)-assets-13.png" width="286px" height="50px"></a>
+                    </div>                        
+                </div> 
+                <div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <section class="sobre-mi">
-        <div class="d-flex align-items-center">
-            <div class="col-8 d-flex row justify-content-end">
-                <h1>SOBRE MI</h1>
-                <h4>DISEÑADOR GRÁFICO Y AUDIOVISUAL</h4>
-            </div>
-            <div class="col-4">
-                <img src="./assets/png/web(YANROH)-assets-52.png" width="300px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8 py-5 ps-sm-5 mt-sm-5 ms-sm-2 d-flex row align-content-center justify-content-center">
+                    <h1 class="ms-sm-5 ps-sm-5 mt-sm-5 mb-0 font-responsive-title height-yan-roh">SOBRE MI</h1>
+                    <h4 class="ms-sm-5 ps-sm-5 font-subtitle-responsive">DISEÑADOR GRÁFICO Y AUDIOVISUAL</h4>
+                </div>
+                <div class="col-sm-4 mt-sm-5 pt-1 ps-sm-5">
+                    <img class="width-yan-roh img-fluid" src="./assets/png/web(YANROH)-assets-52.png" width="220px">
+                </div>
             </div>
         </div>
     </section>
-    <section class="pres">
-        <div class="container d-flex justify-content-center">
-            <div class="col-6">
-                <div class="row">
-                    <div class="comillas">
-                        <img src="./assets/png/Group (7).png" width="20px">
+    <section class="pres my-sm-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="yan-roh col-sm-6 order-sm-2 px-4">
+                    <div class="pt-5">
+                        <h5 class="py-2">#INFORMACIÓN PERSONAL</h5>
+                        <h3 class="py-2">Hola, soy Yan Roh</h3>
+                        <p>Soy un diseñador gráfico creativo y apasionado por mi trabajo, con amplia experiencia en el sector educativo tanto en edición de video como en diseño gráfico. Mi objetivo es seguir creciendo profesionalmente y aprendiendo día a día, y para ello estoy disponible para proyectos freelance y para trabajar en empresas que me brinden nuevos retos y oportunidades para demostrar mis habilidades.</p>
+                        <p>Me considero una persona proactiva, detallista y con una gran capacidad de adaptación a cualquier tipo de proyecto o situación. Me encanta trabajar en equipo y aprender de mis colegas, pero también disfruto de la autonomía y la responsabilidad que conlleva ser un profesional independiente. Estoy seguro de que con mi experiencia y mi pasión por el diseño gráfico, puedo aportar un valor añadido a cualquier empresa o proyecto en el que participe.</p>
                     </div>
-                    <div class="cita">
-                        <p>Mi objetivo es crear piezas visuales impactantes y eficaces que transmitan mensajes claros y emocionantes.</p>
-                        <p>Jean Robert Rivadeneira</p>
+                    <div class="my-5 px-3">
+                        <div class="row justify-content-between">
+                            <div class="datos-de-contacto row col-6">
+                                <div class="col-3 d-flex align-items-center justify-content-center border border-0 rounded-circle">
+                                    <img src="assets/png/web(YANROH)-assets-12.png" width="15px">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="ell">EMAIL:</h6>
+                                    <P>HOLA@YANROH.ME</P>
+                                </div>
+                            </div>
+                            <div class="datos-de-contacto row col-6">
+                                <div class="col-3 d-flex align-items-center justify-content-center border border-0 rounded-circle">
+                                    <img src="assets/png/web(YANROH)-assets-11.png" width="15px">
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="ell">LLÁMAME:</h6>
+                                    <p>(+51)961607474</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-sm-6 position-relative order-sm-1">
+                    <div class="row ms-2">
+                        <div class="comillas z-1 position-absolute ms-5">
+                            <img src="./assets/png/Vector7.png" width="40px">
+                        </div>
+                        <div class="cita z-0 position-absolute mt-3 d-flex justify-content-center p-5">
+                            <p class="pt-4">Mi objetivo es crear piezas visuales impactantes y eficaces que transmitan mensajes claros y emocionantes.</p>
+                            <h6>Jean Robert Rivadeneira</h6>
+                        </div>
+                    </div>
+                    <div class="img4 position-yan-roh d-none d-sm-flex">
+                        <img src="./assets/png/Recurso4.png" width="430px" height="500px">
                     </div>
                 </div>
-                <div class="img4">
-                    <img src="./assets/png/Recurso 4.png">
-                </div>
-            </div>
-            <div class="yan-roh col-6">
-                <div>
-                    <h5>#INFORMACIÓN PERSONAL</h5>
-                    <h3>Hola, soy <strong>Yan Roh</strong></h3>
-                    <p>Soy un diseñador gráfico creativo y apasionado por mi trabajo, con amplia experiencia en el sector educativo tanto en edición de video como en diseño gráfico. Mi objetivo es seguir creciendo profesionalmente y aprendiendo día a día, y para ello estoy disponible para proyectos freelance y para trabajar en empresas que me brinden nuevos retos y oportunidades para demostrar mis habilidades.</p>
-                    <p>Me considero una persona proactiva, detallista y con una gran capacidad de adaptación a cualquier tipo de proyecto o situación. Me encanta trabajar en equipo y aprender de mis colegas, pero también disfruto de la autonomía y la responsabilidad que conlleva ser un profesional independiente. Estoy seguro de que con mi experiencia y mi pasión por el diseño gráfico, puedo aportar un valor añadido a cualquier empresa o proyecto en el que participe.</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><img src="" alt=""><h6>EMAIL: HOLA@YANROH.ME</h6></li>
-                        <li><img src="" alt=""><h6>LLÁMAME: (+51)961607474</h6></li>
-                    </ul>
+                <div class="d-sm-none">
+                    <img src="./assets/png/Recurso4.png" width="400px">
                 </div>
             </div>
         </div>
     </section>
     <section class="numeros">
-        <div class="row d-flex align-items-center">
-            <div class="col-4 row">
-                <div class="col-6">
-                    <h2>+99</h2>
-                </div>
-                <div class="col-6">
-                    <p>Proyectos terminados</p>
-                </div>
-            </div>
-            <div class="col-4 row">
-                <div class="col-6 d-flex justify-content-center">
-                    <h1>10</h1>
-                </div>
-                <div class="col-6">
-                    <p>Años de experiencia</p>
-                </div>
-            </div>
-            <div class="col-4 row">
-                <div class="col-6">
-                    <h2>86</h2>
-                </div>
-                <div class="col-6">
-                    <p>Clientes satisfechos</p>
+        <div class="container">
+            <div class="align-items-center mt-4">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-4 row">
+                        <div class="col-6 d-flex justify-content-start">
+                            <h2>+99</h2>
+                        </div>
+                        <div class="col-6 ps-5 pt-2">
+                            <p>Proyectos terminados</p>
+                        </div>
+                    </div>
+                    <div class="col-4 row">
+                        <div class="col-5 d-flex justify-content-center pt-2">
+                            <h1>10</h1>
+                        </div>
+                        <div class="col-7 pt-4">
+                            <p>Años de experiencia</p>
+                        </div>
+                    </div>
+                    <div class="col-4 row">
+                        <div class="col-5">
+                            <h2>86</h2>
+                        </div>
+                        <div class="col-7 ps-3 pt-3">
+                            <p>Clientes satisfechos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="habilidades">
-        <div class="column d-flex">
-            <div class="col-6 d-flex row justify-content-space-around ">
-                <div>
-                    <h5>#NECESITAS SABER</h5>
-                    <h3>HABILIDADES</h3>
+        <div class="container">
+            <div class="row justify-content-sm-center ms-sm-5 ps-sm-5 py-5">
+                <div class="col-sm-6 row align-content-center align-content-sm-around height-hab ms-sm-5">
+                    <div class="ps-5 ps-sm-4">
+                        <h5 class="pb-2">#NECESITAS SABER</h5>
+                        <h3>HABILIDADES</h3>
+                    </div>
+                    <div class="d-flex justify-content-evenly mt-5 ps-sm-0">
+                        <a href=""><img src="./assets/png/web(YANROH)-assets-15.png" width="45px"></a>
+                        <p class="pt-2 ps-2">DESCARGAR MI CV.PDF</p>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-space-evenly">
-                    <a href=""><img src="./assets/png/web(YANROH)-assets-15.png" width="35px"></a>
-                    <p>DESCARGAR MI CV.PDF</p>
+                <div class="col-sm-6 d-flex justify-content-start align-items-center p-5">
+                    <img class="width-hab" src="./assets/png/Group10.png" width="320px">
                 </div>
+             <!--  <div class="col-6 d-flex justify-content-center align-items-center">
+                    <ul>
+                        <li>Ilustrator</li>
+                        <li>Photoshop</li>
+                        <li>Indesing</li>
+                        <li>Premiere</li>
+                        <li>After Efects</li>
+                        <li>Audition</li>
+                    </ul>
+                </div> -->
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <img src="./assets/png/Group (10).png" width="250px">
-            </div>
-            <!--
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <ul>
-                    <li>Ilustrator</li>
-                    <li>Photoshop</li>
-                    <li>Indesing</li>
-                    <li>Premiere</li>
-                    <li>After Efects</li>
-                    <li>Audition</li>
-                </ul>
-            </div> -->
         </div>
     </section>
     <section>
-        <div>
-            <img src="./assets/png/Rectangle.png" width="1400px" height="">
+        <div class="video-responsive">
+            <iframe width="560px" height="315px" src="https://www.youtube.com/embed/xcJtL7QggTI?si=BId75oUkeU9KT3T6" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Aquí debería haber un video
+            </iframe>
         </div>
     </section>
     <section class="antecedentes">
-        <div class="row">
-            <div class="col-8">
-                <div class="d-flex">
-                    <h2>EXPERIENCIA</h2>
+        <div class="container">
+            <div class="row d-sm-none p-3"> 
+                <div class="row">
+                    <div class="d-flex justify-content-start">
+                        <div class="row">
+                            <img src="./assets/png/Vector8.png" width="60px" height="1px">
+                            <h2 class="pt-2">EXPERIENCIA</h2>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <table class="text-start">
+                            <tr>
+                                <td>2013 - Presente</td>
+                                <td>
+                                    <h5>Diseñador gráfico freelance</h5>
+                                    <p>Diseñador independiente</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2014</td>
+                                <td>
+                                    <h5>Universidad Tecnológica del Perú</h5>
+                                    <p>Prácticas Pre profesionales</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2016</td>
+                                <td>
+                                    <h5>Páginas Verdes</h5>
+                                    <p>Diseñador gráfico</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2016 - 2019</td>
+                                <td>
+                                    <h5>Universidad Tecnológica del Perú</h5>
+                                    <p>Comunicador audiovisual</p>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>2019 - 2020</td>
+                                <td>
+                                    <h5>Liderman</h5>
+                                    <p>Diseñador independiente</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2020 - 2021</td>
+                                <td>
+                                    <h5>Reach RH Group</h5>
+                                    <p>Diseñador gráfico y Audiovisual Independiente</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021 - Presente</td>
+                                <td>
+                                    <h5>Universidad Científica del Sur</h5>
+                                    <p>Diseñador gráfico y Audiovisual Independiente</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2022 - Presente</td>
+                                <td>
+                                    <h5>Giordano Muebles de cuero</h5>
+                                    <p>Diseñador gráfico</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-start py-3">
+                        <div class="row">
+                            <img src="./assets/png/Vector8.png" width="60px" height="1px">
+                            <h2 class="pt-2">EDUCACIÓN</h2>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <table class="text-start">
+                            <tr>
+                                <td>2011</td>
+                                <td>
+                                    <h5>Senati</h5>
+                                    <p>Curso: Diseño Digital Publicitario</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2011</td>
+                                <td>
+                                    <h5>Instituto Idatec</h5>
+                                    <p>Ofimática y Diseño Gráfico</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2012 - 2013</td>
+                                <td>
+                                    <h5>Instituto Pooussin</h5>
+                                    <p>Curso: Diseño Gráfico Publicitario</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2012 - En curso</td>
+                                <td>
+                                    <h5>Universidad Tecnológica del Perú</h5>
+                                    <p>Diseño Digital Publicitario</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>    
+                </div>
+        </div>
+        <div class="row d-none d-sm-flex pt-5">
+            <div class="col-sm-8">
+                <div class="d-flex justify-content-start ps-3">
+                    <div class="row">
+                        <img src="./assets/png/Vector8.png" alt="">
+                        <h2 class="p-2">EXPERIENCIA</h2>
+                    </div>
                 </div>
                 <div class="d-flex">
                     <table class="text-start">
@@ -189,9 +408,12 @@
                     </table>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="d-flex justify-content-start">
-                    <h2>EDUCACIÓN</h2>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-start ps-3">
+                    <div class="row">
+                        <img src="./assets/png/Vector8.png" alt="">
+                        <h2 class="p-2">EDUCACIÓN</h2>
+                    </div>
                 </div>
                 <div class="d-flex">
                     <table class="text-start">
@@ -230,39 +452,57 @@
     </section>
     <section id="contacto">
         <div class="container">
-            <div class="row d-flex text-center justify-content-center">
-                <div class="">
-                    <h3>¿LISTO PARA TRABAJAR CONMIGO?</h3>
-                </div>
-                <div>
-                    <p>Lima, Perú</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <h1 class="cro">HOLA@YANROH.ME</h1>
-                </div>
-                <div>
-                    <p>(+51) 961607474</p>
-                </div>    
-                <div class="d-flex justify-content-center">   
-                    <ul class="redes-sociales">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="">Linkedin</a></li>
-                    </ul>
+            <div class="row d-flex text-center justify-content-center border-top border-white border-opacity-10 py-sm-4">
+                <div class="align-content-center mt-5 mb-sm-5 pb-3">
+                    <div class="mt-2 ms-4 mb-4">
+                        <h3>¿LISTO PARA TRABAJAR JUNTOS?</h3>
+                    </div>
+                    <div class="pt-4 my-4">
+                        <p>Lima, Perú</p>
+                    </div>
+                    <div class="d-flex justify-content-center font-responsive">
+                        <h1 class="cro font-responsive">HOLA@YANROH.ME</h1>
+                    </div>
+                    <div class="">
+                        <p>(+51) 961607474</p>
+                    </div>    
+                    <div class="d-flex justify-content-center mt-5 mb-sm-5">   
+                        <ul class="redes-sociales">
+                            <li class="font-li-responsive"><a href="https://www.facebook.com/rivajeanr">Facebook</a></li>
+                            <li class="font-li-responsive"><a href="https://www.instagram.com/yanroh.dg/">Instagram</a></li>
+                            <li class="font-li-responsive"><a href="https://www.behance.net/yanroh">Behance</a></li>
+                            <li class="font-li-responsive"><a href="https://pe.linkedin.com/in/yanroh">Linkedin</a></li>
+                            <li class="font-li-responsive"><a href="https://www.freepik.com/author/yanroh">Freepik</a></li>
+                        </ul>
+                    </div>
                 </div> 
             </div>   
         </div>    
     </section>
     <footer>
-        <div>
-             <p>©Copyright 2024 by <strong>YanRoh</strong> All Rights Reserved</p>
-        </div>
-        <div class="logo-redes-foot"> 
-            <img src="./assets/png/Facebook.png" alt="">
-            <img src="./assets/png/Instagram.png" alt="">
-            <img src="./assets/png/Be.png" alt="">
-            <img src="./assets/png/Linkedin.png" alt="">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around border-top border-white border-opacity-10">
+                <div class="d-flex text-center">
+                    <p class="my-4">Copyright © 2024 by YanRoh. All Rights Reserved.</p>
+                </div>
+                <div class="logo-redes-foot d-flex my-3"> 
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="9px" height="15px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="16px" height="16px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center"> 
+                        <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="18px" height="12px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="15px" height="15px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="15px"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

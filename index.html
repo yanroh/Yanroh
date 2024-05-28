@@ -7,155 +7,263 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+    </style>
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-sm border-bottom border-dark">
-                <div class="container-fluid">
-                        <img src="./assets/png/YANROH.png" width="76px" height="38px">
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menunavegacion">
-                            <span class="white navbar-toggler-icon"></span>
-                        </button>
-
-                        <div id="menunavegacion" class="justify-content-md-center align-items-md-center mt-3 menu collapse navbar-collapse">    
-                            <ul class="d-md-inline-flex font-ul-responsive navbar-var ms-0">
-                                <li class="navbar-item"><a class="nav-link" href="/index.html">INICIO</a></li>
-                                <li class="navbar-item"> <a class="nav-link" href="/perfil.html">SOBRE MI</a> </li>
-                                <li class="navbar-item"><a class="nav-link" href="/portafolio.html">PORTAFOLIO</a></li>
-                                <li class="navbar-item"><a class="nav-link" href="/contacto.html">CONTACTO</a></li>
-                            </ul>
-                        </div>
-                    <div class="d-none d-md-inline">
-                        <div class="d-flex">
-                            <div class="border-start p-2 border-dark">
-                            <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" alt="10px"></a>
-                            </div>
-                            <div class="border-start p-2 border-dark">
-                            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" alt="10px"></a>
-                            </div>
-                            <div class="border-start p-2 border-dark">
-                            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" alt="10px"></a>
-                            </div>
-                            <div class="border-start p-2 border-dark">
-                            <a href="https://www.linkedin.com/in/yanroh/"><img src="./assets/png/Linkedin.png" alt="10px"></a>
-                            </div>
-                            <div class="border-start p-2 border-dark">
-                                <a href="https://www.freepik.com/author/yanroh"><img src="./assets/svg/web(YANROH)-assets-54.svg" alt="10px"></a>
-                            </div>
-                            <div>
-                            <a href="mailto:hola@yanroh.me"><img src="./assets/png/web(YANROH)-assets-13.png" width="250px"></a>
-                            </div>
-                        </div>
-                        <div class="d-md-none d-inline">
-                            <img src="./assets/png/Group (11).png" alt="">
-                        </div>
+        <nav class="navbar navbar-expand-sm p-0">
+            <div class="container-fluid border-bottom border-white border-opacity-10">
+              <a class="navbar-brand p-4 p-sm-0 ps-sm-5" href="#"><img src="./assets/png/YANROH.png" width="65px" height="35px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><img src="./assets/png/Group (11).png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="d-flex justify-content-end ms-4 pt-5 my-5 pt-sm-0 my-sm-0 navbar-nav font-ul-responsive">
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/perfil.html">SOBRE MI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/portafolio.html">PORTAFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-0 py-sm-2" href="/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <div class="d-sm-none">
+                    <div class="pb-5">
+                        <button class="btn btn-danger">DESCARGAR CV</button>
                     </div>
-                </div>    
-            </nav>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-center justify-content-center" style="background-image: url('./assets/png/Recurso 4.png');background-repeat: no-repeat; background-position-x: 57vw; background-position-y: bottom; background-size: contain;">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="d-flex justify-content-start d-none d-md-inline">
-                                <img src="./assets/png/web(YANROH)-assets-05.png" width="80px" height="20px">
-                            </div>
-                            <div class="d-flex justify-content-center d-none d-md-inline">
-                                <img src="./assets/png/web(YANROH)-assets-06.png" width="120px" height="30px">
-                            </div>
-                        </div>    
-                        <div class="col-6 d-none d-md-inline"> 
-                            <img src="./assets/png/Group (6).png" width="180px" height="180px">
+                    <div class="d-flex flex-column py-5 flex-sm-row">
+                        <ul class="d-flex flex-column flex-sm-row datos-de-contacto">
+                            <li class="row">
+                                <div class="col-2">
+                                    <img src="assets/png/web(YANROH)-assets-09.png" width="30px">
+                                </div>
+                                <div class="col-10 mb-3">
+                                    <p class="ell">EMAIL</p>
+                                    <P>HOLA@YANROH.ME</P>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="col-2">
+                                    <img src="assets/png/web(YANROH)-assets-10.png" width="30px">
+                                </div>
+                                <div class="col-10">
+                                    <p class="ell">LLÁMAME</p>
+                                    <p>(+51)961607474</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-redes-foot d-flex my-3"> 
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="9px" height="15px"></a>
                         </div>
-                    </div>  
-                    <div class="d-md-none d-inline row d-flex">
-                        <div class="column">
-                            <img class="" src="./assets/png/web(YANROH)-assets-05.png" width="80px" height="30px">
-                            <img class="" src="./assets/png/web(YANROH)-assets-06.png" width="110px" height="35px">
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="16px" height="16px"></a>
                         </div>
-                        <div>
-                            <img src="./assets/png/Group (6).png" width="140px" height="140px">
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center"> 
+                            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="18px" height="12px"></a>
                         </div>
-                    </div>  
-                    <div class="d-none d-md-inline">
-                        <ul class="infobasica d-flex">
-                            <li class="pr">PORTAFOLIO</li>
-                            <li><img src="./assets/png/web(YANROH)-assets-16.png" width="35px"><span>VIDEOREEL</span></li>
-                            <li><img src="./assets/png/web(YANROH)-assets-15.png" width="35px"><span>DESCARGAR MI CV.PDF</span></li>
-                        </ul> 
-                    </div> 
-                    <div class="d-md-none flex-column d-flex justify-content-flex-start ">
-                        <div class="pr">PORTAFOLIO</div>
-                        <div class="sp"><img src="./assets/png/web(YANROH)-assets-16.png" width="50px"><span>VIDEOREEL</span></div>
-                        <div class="sp"><img src="./assets/png/web(YANROH)-assets-15.png" width="50px"><span>DESCARGAR MI CV.PDF</span></div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="15px" height="15px"></a>
+                        </div>
+                        <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                            <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="15px"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="d-flex align-items-center d-none d-md-inline-flex ms-5">
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="10px" height="20px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="20px" height="20px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="22px" height="15px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="18px" height="18px"></a>
+                    </div>
+                    <div class="d-flex align-items-center border-start p-2 border-white border-opacity-10">
+                        <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="18x" height="15px"></a>
+                    </div>
+                    <div>
+                        <a href="mailto:hola@yanroh.me"><img src="./assets/png/web(YANROH)-assets-13.png" width="286px" height="50px"></a>
+                    </div>                        
+                </div> 
+                <div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row border-bottom border-white border-opacity-10 background-height background-size background-position">
+                <div class="d-flex align-content-center ps-sm-5">
+                    <div class="row ps-sm-3 mt-5">
+                        <div class="my-sm-5 py-sm-5 px-3 mt-5">
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <div class="d-flex justify-content-start d-none d-md-flex">
+                                        <img src="./assets/png/web(YANROH)-assets-05.png" width="170px" height="63px">
+                                    </div>
+                                    <div class="d-flex justify-content-end d-none d-md-flex">
+                                        <img src="./assets/png/web(YANROH)-assets-06.png" width="260px" height="63px">
+                                    </div>
+                                </div>    
+                                <div class="col-6 d-none d-md-inline"> 
+                                    <img src="./assets/png/Group (6).png" width="260px" height="260px">
+                                </div>
+                            </div>  
+                            <div class="d-md-none d-inline row d-flex px-2">
+                                <div>
+                                    <h5>YO SOY</h5>
+                                </div>
+                                <div class="ps-3 pb-3">
+                                    <img src="./assets/png/Group (6).png" width="140px" height="140px">
+                                </div>
+                            </div>  
+                            <div class="d-none d-sm-inline">
+                                <ul class="infobasica d-flex justify-content-between my-4">
+                                    <li class="pr">PORTAFOLIO</li>
+                                    <li><img class="me-2" src="./assets/png/web(YANROH)-assets-16.png" width="50px"><span>VIDEOREEL</span></li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/18fvlNwtcgMm74borL3W-OPLdnKJr5ijl/view" target="_blank">
+                                            <img class="me-2" src="./assets/png/web(YANROH)-assets-15.png" width="50px"><span>DESCARGAR MI CV.PDF</span>
+                                        </a>
+                                    </li>
+                                </ul> 
+                            </div> 
+                            <div class="d-md-none flex-column d-flex justify-content-center">
+                                <div class="pr">PORTAFOLIO</div>
+                                <div class="sp"><img class="pe-2" src="./assets/png/web(YANROH)-assets-16.png" width="70px"><span>VIDEOREEL</span></div>
+                                <div class="sp"><img class="pe-2" src="./assets/png/web(YANROH)-assets-15.png" width="70px"><span>DESCARGAR MI CV.PDF</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div> 
     </section>
     <section id="sobre-mi">
-        <div class="container row">
-            <div class="col-6 lee-sobre-mi">
-                <div class="imgj">
-                    <img class="imagen19" src="./assets/png/web(YANROH)-assets-19.png" width="280px">
-                    <img class="imagen01" src="./assets/png/web(YANROH)-assets-01.png" width="300px">
-                    <img class="imagen02" src="./assets/png/web(YANROH)-assets-02.png" width="100px">
-                </div>
-            </div> 
-            <div class="col-6">
-                <div class="titulo">
-                    <div>
-                        <h4 class="font-subtitle-responsive">01. LEE SOBRE MI</h4>
-                        <h1>JEAN ROBERT</h1>
-                        <div class="cts">
-                        <h2>RIVADENEIRA</h2> 
-                        </div>
-                    </div> 
-                    <div>
-                        <nav class="nav">
-                            <ul class="nav nav-underline nav-justify"id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-mepresento-tab" data-bs-toggle="pill" data-bs-target="#pills-mepresento" type="button" role="tab" aria-controls="pills-mepresento" aria-selected="true">ME PRESENTO</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-estudios-tab" data-bs-toggle="pill" data-bs-target="#pills-estudios" type="button" role="tab" aria-controls="pills-estudios" aria-selected="true">ESTUDIOS</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-habilidades-tab" data-bs-toggle="pill" data-bs-target="#pills-habilidades" type="button" role="tab" aria-controls="pills-habilidades" aria-selected="true">HABILIDADES</button>
-                                </li>
-                              </ul>
-                        </nav>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade" id="pills-mepresento" role="tabpanel" aria-labelledby="pills-mepresento-tab" tabindex="0">Hola, soy <strong>Yan Roh</strong>, diseñador gráfico audiovisual <strong>apasionado y dedicado </strong>. He trabajado en la 
-                                industria durante <strong>10 años con un enfoque creativo y una amplia experiencia</strong> en el sector educativo. Me esfuerzo por 
-                                proponer <strong>ideas innovadoras y frescas en cada proyectos</strong>, y estoy constantemente buscando nuevas formas de crecer y 
-                                aprender en mi carrera. Como <strong>freelance</strong>, busco trabajar con empresas e individuos que valoran la creatividad y la 
-                                calidad en sus proyectos de diseño.</div>
-                            <div class="tab-pane fade" id="pills-estudios" role="tabpanel" aria-labelledby="pills-estudios-tab" tabindex="0">Aquí debería ir información sobre sus estudios</div>
-                            <div class="tab-pane fade" id="pills-habilidades" role="tabpanel" aria-labelledby="pills-habilidades-tab" tabindex="0">Aquí información sobre las habilidades de Jean</div>
-                        </div>
-                        <div class="d-flex flex-column flex-sm-row">
-                            <div class="d-flex flex-column flex-sm-row">
-                                <ul class="d-flex flex-column flex-sm-row">
-                                    <li>
-                                        <p>EMAIL:</p>
-                                        <a href="mailto:hola@yanroh.me"><p>hola@yanroh.me</p></a>
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-row">
+                <div class="col-sm-6 d-sm-flex justify-content-end my-5 pt-5">
+                    <img class="img-fluid" src="./assets/png/Recurso5.png" width="450px" height="550px">
+                </div> 
+                <div class="col-sm-6 my-5 pt-sm-5">
+                    <div class="titulo my-sm-5 ms-sm-2">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <h4>01. LEE SOBRE MI</h4>
+                                <img class="img-fluid ps-2" src="assets/png/Vector(1).png" width="220px" height="3px">
+                            </div>
+                            <h1 class="font-title-responsive">JEAN ROBERT</h1>
+                            <h2 class="font-title-responsive">RIVADENEIRA</h2> 
+                        </div> 
+                        <div>
+                            <nav class="nav border-bottom border-white border-opacity-10">
+                                <ul class="nav nav-underline nav-justify"id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-mepresento-tab" data-bs-toggle="pill" data-bs-target="#pills-mepresento" type="button" role="tab" aria-controls="pills-mepresento" aria-selected="true">ME PRESENTO</button>
                                     </li>
-                                    <li>
-                                       <p>LLÁMAME:</p>
-                                       <a href="https://api.whatsapp.com/send/?phone=51961607474&text&type=phone_number&app_absent=0"><p>(+51)961607474</p></a>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-estudios-tab" data-bs-toggle="pill" data-bs-target="#pills-estudios" type="button" role="tab" aria-controls="pills-estudios" aria-selected="true">ESTUDIOS</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-habilidades-tab" data-bs-toggle="pill" data-bs-target="#pills-habilidades" type="button" role="tab" aria-controls="pills-habilidades" aria-selected="true">HABILIDADES</button>
                                     </li>
                                 </ul>
+                            </nav>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-mepresento" role="tabpanel" aria-labelledby="pills-mepresento-tab" tabindex="0">
+                                    <p>Hola, soy <strong>Yan Roh</strong>, diseñador gráfico audiovisual <strong>apasionado y dedicado </strong>. He trabajado en la 
+                                    industria durante <strong>10 años con un enfoque creativo y una amplia experiencia</strong> en el sector educativo. Me esfuerzo por 
+                                    proponer <strong>ideas innovadoras y frescas en cada proyectos</strong>, y estoy constantemente buscando nuevas formas de crecer y 
+                                    aprender en mi carrera. Como <strong>freelance</strong>, busco trabajar con empresas e individuos que valoran la creatividad y la 
+                                    calidad en sus proyectos de diseño.</p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-estudios" role="tabpanel" aria-labelledby="pills-estudios-tab" tabindex="0">
+                                    <p class="mb-0">Universidad Tecnológica del Perú. Perú, Lima. Cursando Bachillerato en Diseño Digital Publicitario, de abril 2012.</p>
+                                    <p class="mb-0">Instituto Poussin. Perú, Lima. Curso de Diseño Gráfico Publicitario, de febrero de 2012 a febrero 2013.</p>
+                                    <p class="mb-0">Instituto Idatec. Perú, Lima. Estudios técnicos en Ofimática y Diseño Gráfico de febrero de 2011 a diciembre 2011.</p>
+                                    <p class="mb-0">SENATI. Perú, Lima. Curso de Diseño Digital Publicitario, de mayo 2011 a diciembre de 2011.</p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-habilidades" role="tabpanel" aria-labelledby="pills-habilidades-tab" tabindex="0">
+                                    <p>Aquí información sobre las habilidades de Jean</p>
+                                </div>
                             </div>
-                            <div class="d-flex flex-column flex-sm-row">   
-                                <button class="btn btn-danger font-buttom-responsive">DESCARGAR CV</button>
-                                <button class="btn btn-outline-success font-buttom-responsive">DEJA UN MENSAJE</button>
+                            <div>
+                                <div class="d-flex flex-column flex-sm-row">
+                                    <ul class="d-flex flex-column flex-sm-row datos-de-contacto">
+                                        <li class="row">
+                                            <div class="col-2">
+                                                <img src="assets/png/web(YANROH)-assets-09.png" width="30px">
+                                            </div>
+                                            <div class="col-10 mb-3">
+                                                <p class="ell">EMAIL</p>
+                                                <P>HOLA@YANROH.ME</P>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col-2">
+                                                <img src="assets/png/web(YANROH)-assets-10.png" width="30px">
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="ell">LLÁMAME</p>
+                                                <p>(+51)961607474</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-3 d-flex flex-column flex-sm-row">
+                                    <div class="col-5 py-2">
+                                        <button class="btn btn-danger">DESCARGAR CV</button>
+                                    </div>
+                                    <div class="col-5 py-2 ps-sm-3">
+                                        <button class="btn btn-outline-success">DEJA UN MENSAJE</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,187 +272,304 @@
         </div>       
     </section>
     <section id="portafolio">
-        <div class="container">
-            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="d-md-flex justify-content-center align-items-center my-5 p-2">
                 <div class="col-md-6 row d-flex">
-                    <h4 class="font-subtitle-responsive">02. PORTAFOLIO</h4>
-                    <div class="cts">
-                    <h2>PROYECTOS</h2>
-                    </div> 
-                    <h1>RECIENTES</h1>
+                    <div class="d-flex align-items-center">
+                        <h4>02. PORTAFOLIO</h4>
+                        <img class="img-fluid ps-2" src="assets/png/Vector(1).png" width="220px" height="3px">
+                    </div>
+                    <h2 class="font-title-responsive">PROYECTOS</h2> 
+                    <h1 class="font-title-responsive">RECIENTES</h1>
                 </div>
-                <div class="col-md-6">
-                    <button class="btn btn-danger font-buttom-responsive">MOSTRAR OTROS</button>
-                </div>
-            </div>
-            <div class="proyect-galery row">
-                <div class="det">
-                    <h4>FASHION</h4>
-                    <p>Trending Fashion</p>
-                </div>
-                <div class="det">
-                    <h4>PHOTOGRAPY</h4>
-                    <p>Pacific Northwest</p>
-                </div>
-                <div class="det">
-                    <h4>FASHION</h4>
-                    <p>The Power of Personality</p>
-                </div>
-                <div class="det">
-                    <h4>NATURE</h4>
-                    <p>Pacific Northwest</p>
-                </div>
-                <div class="det">
-                    <h4>Fashion</h4>
-                    <p>Trending Fashion</p>
-                </div>
-            </div>
-        </div>    
-    </section>
-    <section id="servicios">
-        <div class="row d-flex justify-content-center">
-            <div class="row col-md-6">
-                <h4 class="font-subtitle-responsive">03. SERVICIOS</h4>
-                <h1>EXPERIENCIA</h1> 
-                <div class="cts">
-                    <h2>DIGITAL</h2>
-                </div>
-            </div> 
-            <div class="flex-column flex-sm-row d-flex"> 
-                <div class="row col-md-6 d-flex align-items-center justify-content-center">    
-                    <div class="lista">
-                        <ul>
-                            <li><a href="">DISEÑO PUBLICITARIO</a></li>
-                            <li><a href="">IDENTIDAD CORPORATIVA</a></li>
-                            <li><a href="">DISEÑO EDITORIAL</a></li>
-                            <li><a href="">PACKAGING & LABELING</a></li>
-                            <li><a href="">DISEÑO DE INTERFACES</a></li>
-                            <li><a href="">DISEÑO DE LOGOTIPOS</a></li>
-                            <li><a href="">DISEÑO DE INFOGRAFÍAS</a></li>
-                            <li><a href="">ICONOGRAFÍA</a></li>
-                            <li><a href="">MOTION GRAPHICS & ANIMACIÓN</a></li>
-                            <li><a href="">EDICIÓN DE VIDEOS</a></li>
-                        </ul>
+                <div class="col-md-6 mt-3 botone">
+                    <a href="">MOSTRAR OTROS</a>
+                </div>                 
+            </div>  
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>FASHION</h4>
+                                    <p>Trending Fashion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>PHOTOGRAPY</h4>
+                                    <p>Pacific Northwest</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>FASHION</h4>
+                                    <p>The Power of Personality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>Fashion</h4>
+                                    <p>Trending Fashion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>FASHION</h4>
+                                    <p>The Power of Personality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay d-flex row align-content-end">
+                                    <h4>Fashion</h4>
+                                    <p>Trending Fashion</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/png/web(YANROH)-assets-28.png" width="400px">
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+         </div>  
+    </section>
+    <section id="servicios">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="row col-sm-8">
+                    <div class="d-flex align-items-center">
+                        <h4>03. SERVICIOS</h4>
+                        <img class="img-fluid ps-2" src="assets/png/Vector(1).png" width="220px" height="3px">
+                    </div>
+                    <h1 class="font-title-responsive">EXPERIENCIA</h1> 
+                    <h2 class="font-title-responsive">DIGITAL</h2>
+                </div> 
+                <div class="row"> 
+                    <div class="row col-sm-5 pt-sm-5 pt-3">    
+                        <div class="lista d-sm-flex justify-content-sm-end">
+                            <ul>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('diseno-publicitario')" onmouseenter="displaySlide('diseno-publicitario')"><span><img src="./assets/png/Group14.png" width="70px"></span>DISEÑO PUBLICITARIO</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('identidad-corporativa')" onmouseenter="displaySlide('identidad-corporativa')"><span><img src="./assets/png/Group14.png" width="70px"></span>IDENTIDAD CORPORATIVA</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('diseno-editorial')" onmouseenter="displaySlide('diseno-editorial')" ><span><img src="./assets/png/Group14.png" width="70px"></span>DISEÑO EDITORIAL</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('packaging')" onmouseenter="displaySlide('packaging')" ><span><img src="./assets/png/Group14.png" width="70px"></span>PACKAGING & LABELING</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('diseno-interfaces')" onmouseenter="displaySlide('diseno-interfaces')" ><span><img src="./assets/png/Group14.png" width="70px"></span>DISEÑO DE INTERFACES</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('diseno-logotipos')" onmouseenter="displaySlide('diseno-logotipos')" ><span><img src="./assets/png/Group14.png" width="70px"></span>DISEÑO DE LOGOTIPOS</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('diseno-infografia')" onmouseenter="displaySlide('diseno-infografia')" ><span><img src="./assets/png/Group14.png" width="70px"></span>DISEÑO DE INFOGRAFÍAS</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('iconografia')" onmouseenter="displaySlide('iconografia')" ><span><img src="./assets/png/Group14.png" width="70px"></span>ICONOGRAFÍA</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('motion')" onmouseenter="displaySlide('motion')" ><span><img src="./assets/png/Group14.png" width="70px"></span>MOTION GRAPHICS & ANIMACIÓN</a></li>
+                                <li class="ps-5 py-1"><a class="ps-5" href="#" onclick="displaySlide('edicion-de-videos')" onmouseenter="displaySlide('edicion-de-videos')" ><span><img src="./assets/png/Group14.png" width="70px"></span>EDICIÓN DE VIDEOS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <div class="position-relative width-img">
+                            <img class="img-20 img-fluid position-absolute d-none d-sm-flex" src="/assets/png/web(YANROH)-assets-20.png" width="520px">
+                            <img id="diseno-publicitario" class="img-21 img-fluid position-img position-absolute slide-servicios" src="/assets/png/Diseño publicitario.jpg" width="450px">
+                            <img id="identidad-corporativa" class="img-21 img-fluid position-img position-absolute d-none slide-servicios" src="/assets/png/Identidad corporativa.jpg" width="450px">
+                            <img id="diseno-editorial" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Diseño editorial.jpg" width="450px">
+                            <img id="packaging" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Packaging & labeling.jpg" width="450px">
+                            <img id="diseno-interfaces" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Diseño de interfaces.jpg" width="450px">
+                            <img id="diseno-logotipos" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Diseño de logotipos.jpg" width="450px">
+                            <img id="diseno-infografia" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Diseño de infografías.jpg" width="450px">
+                            <img id="iconografia" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Iconografía.jpg" width="450px">
+                            <img id="motion" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/Motion graphics & animación.jpg" width="450px">
+                            <img id="edicion-de-videos" class="img-21 img-fluid position-absolute position-img d-none slide-servicios" src="/assets/png/EDición de video.jpg" width="450px">
+                            <img class="img-22 img-fluid position-absolute position-logo" src="/assets/png/web(YANROH)-assets-22.png" width="100px">
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>    
     </section>
     <section class="certificaciones">
-        <div class="container row">
-            <div>
-                <h4 class="font-subtitle-responsive">04. CERTIFICACIONES</h4>
-                <h1 class="font-title-responsive">CURSOS Y</h1> 
-                <div class="cts">
-                <h2 class="font-title-responsive">CERTIFICACIONES</h2>
+        <div class="container">
+            <div class="row p-3 p-sm-5">
+                <div class="d-flex align-items-center">
+                    <h4>04. CERTIFICACIONES</h4>
+                    <img class="img-fluid ps-2" src="assets/png/Vector(1).png" width="220px" height="3px">
                 </div>
+                <h1 class="font-title-responsive">CURSOS Y</h1> 
+                <h2 class="font-title-responsive">CERTIFICACIONES</h2>
             </div>    
             <div class="d-flex cursos"> 
-                <div>
-                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px">
+                <div class="std" >
+                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
                     <div>
                         <span class="nombre-curso">UDEMY</span>
-                        <span class="descripcion">UX: Máster en diseño web y experiencia de usuario</span>
-                        <span class="fecha">julio 2022</span>
+                        <span class="descripcion">UX: MÁSTER EN DISEÑO WEB Y EXPERIENCIA DE USUARIO</span>
+                        <span class="fecha">JULIO 2022</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px">
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-29.png" width="250px" height="230px">
                     <div>
                         <span class="nombre-curso">CAMPUS ROMERO</span>
-                        <span class="descripcion">Marketing digital para redes sociales</span>
-                        <span class="fecha">julio 2022</span>
+                        <span class="descripcion">MARKETING DIGITAL PARA REDES SOCIALES</span>
+                        <span class="fecha">JULIO 2022</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px">
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
                     <div>
                         <span class="nombre-curso">ADOBE</span>
-                        <span class="descripcion">Adobe certified associate visual communication using adobe photoshop Cs4</span>
-                        <span class="fecha">Septiembre 2022</span>
+                        <span class="descripcion">A DOBE CERTIFIED ASSOCIATE VISUAL COMMUNICATION USING ADOBE PHOTOSHOP CS4</span>
+                        <span class="fecha">SEPTIEMBRE 2022</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px">
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
                     <div>
                         <span class="nombre-curso">NETZUN</span>
-                        <span class="descripcion">Especialización en Growth Marketing</span>
-                        <span class="fecha">julio 2022</span>
+                        <span class="descripcion">ESPECIALIZACIÓN EN GROWTH MARKETING</span>
+                        <span class="fecha">JULIO 2022</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px">
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
                     <div>
                         <span class="nombre-curso">MEDIAPRO CREATIVE & TRAINING CENTER</span>
                         <span class="descripcion">DISEÑO VECTORIAL AVANZADO</span>
-                        <span class="fecha">junio 2022</span>
+                        <span class="fecha">JUNIO 2022</span>
+                    </div>
+                </div>
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                    <div>
+                        <span class="nombre-curso">NETZUN</span>
+                        <span class="descripcion">ESPECIALIZACIÓN EN PHOTOSHOP E ILUSTRATOR</span>
+                        <span class="fecha">JULIO 2022</span>
+                    </div>
+                </div>
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                    <div>
+                        <span class="nombre-curso">NETZUN</span>
+                        <span class="descripcion">ESPECIALIZACIÓN EN FACEBOOK ADS Y GOOGLE ADS</span>
+                        <span class="fecha">JULIO 2022</span>
+                    </div>
+                </div>
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                    <div>
+                        <span class="nombre-curso">UDEMY</span>
+                        <span class="descripcion">DISEÑO UX: EXPERIENCIA DE USUARIO UX/UI +FIGMA 2022</span>
+                        <span class="fecha">JULIO 2022</span>
+                    </div>
+                </div>
+                <div class="std">
+                    <img src="./assets/png/web(YANROH)-assets-30.png" width="250px" height="230px">
+                    <div>
+                        <span class="nombre-curso">UDEMY</span>
+                        <span class="descripcion">UX WRITING: DISEÑO DE CONTENIDO Y EXPERIENCIA DE USUARIO</span>
+                        <span class="fecha">JULIO 2022</span>
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>  
     </section>
     <section class="clientes">
         <div class="container">
             <div class="row">
                 <div>
-                    <h4 class="font-subtitle-responsive">05. TESTIMONIAL</h4>
-                    <div class="cts">
-                        <h2 class="font-title-responsive">TESTIMONIOS</h2> 
+                    <div class="d-flex align-items-center">
+                        <h4 class="m-2">05. TESTIMONIAL</h4>
+                        <img class="img-fluid ps-2" src="assets/png/Vector(1).png" width="220px" height="3px">
                     </div>
+                    <h2 class="font-title-responsive">TESTIMONIOS</h2> 
                     <h1 class="font-title-responsive">DE CLIENTES</h1>
                 </div>    
-                <div>
-                    <button class="btn btn-outline-success font-buttom-responsive">CONTACTAME</button>
+                <div class="my-3">
+                    <p class="ct">CONTÁCTAME</p>
                 </div> 
             </div>       
             <div class="card d-flex align-items-center">
-                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
-                    <div class="card-title d-flex flex-column flex-md-row">
-                        <div class="col-3 d-flex justify-content-center">
-                            <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
+                <div class="card-body m-2 pb-5 pb-sm-2 px-3 px-sm-5 testimonios-de-clientes">
+                    <div class="card-title row column">
+                        <div class="col-sm-3 d-flex justify-content-start justify-content-sm-center">
+                            <img src="./assets/png/web(YANROH)-assets-41.png" width="72px" height="72px">
                         </div>
-                        <div class="col-9 justify-content-start">
+                        <div class="col-sm-8 justify-content-start align-content-center">
                             <h4><strong>Nombre Apellido</strong></h4>
                             <h4>cargo</h4>
                         </div>
                     </div>    
                     <div class="card-text">
-                        <p><strong>“Lorem ipsum dolor sit amet, consectetuer”</strong></p>
+                        <h6><strong>“Lorem ipsum dolor sit amet, consectetuer”</strong></h6>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>
                     </div>
                 </div>
-                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
-                    <div class="card-title d-flex flex-column flex-md-row">
-                        <div class="col-3 d-flex justify-content-center">
-                            <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
+                <div class="card-body m-2 pb-5 pb-sm-2 px-3 px-sm-5 testimonios-de-clientes">
+                    <div class="card-title row column">
+                        <div class="col-sm-3 d-flex justify-content-start justify-content-sm-center">
+                            <img src="./assets/png/web(YANROH)-assets-41.png" width="72px" height="72px">
                         </div>
-                        <div class="col-9 justify-content-start">
+                        <div class="col-sm-8 justify-content-start align-content-center">
                             <h4><strong>Nombre Apellido</strong></h4>
                             <h4>cargo</h4>
                         </div>
                     </div>    
                     <div class="card-text">
-                        <p><strong>“Lorem ipsum dolor sit amet, consectetuer”</strong></p>
+                        <h6><strong>“Lorem ipsum dolor sit amet, consectetuer”</strong></h6>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>
                     </div>
                 </div>
-                <div class="card-body col-md-3 mb-3 m-md-4 testimonios-de-clientes">
-                    <div class="card-title d-flex flex-column flex-md-row">
-                        <div class="col-3 d-flex justify-content-center">
-                            <img src="./assets/png/web(YANROH)-assets-41.png" width="75px">
+                <div class="card-body m-2 pb-5 pb-sm-2 px-3 px-sm-5 testimonios-de-clientes">
+                    <div class="card-title row column">
+                        <div class="col-sm-3 d-flex justify-content-start justify-content-sm-center">
+                            <img src="./assets/png/web(YANROH)-assets-41.png" width="72px" height="72px">
                         </div>
-                        <div class="col-9 justify-content-start">
+                        <div class="col-sm-8 justify-content-start align-content-center">
                             <h4><strong>Nombre Apellido</strong></h4>
                             <h4>cargo</h4>
                         </div>
                     </div>    
                     <div class="card-text">
-                        <p>“Lorem ipsum dolor sit amet, consectetuer”</p>
+                        <h6><strong>“Lorem ipsum dolor sit amet, consectetuer”</strong> </h6>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>
                     </div>
@@ -352,88 +577,155 @@
             </div>
         </div>    
     </section>
-    <section class="loslogos">
-        <div class="slog">
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-42.png" width="100px">
+    <section class="container">
+        <div class="loslogos d-none d-sm-flex align-items-center py-5 my-5">
+            <div class="slog d-flex justify-content-center">
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-42.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-44.png" width="100px" >
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-46.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-48.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-50.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-43.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-45.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-47.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-49.png" width="100px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-51.png" width="100px">
+                </div>
             </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-43.png" width="100px" >
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-44.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-45.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-46.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-47.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-48.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-49.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-50.png" width="100px">
-            </div>
-            <div class="colaboraciones">
-                <img src="./assets/png/web(YANROH)-assets-51.png" width="100px">
+        </div>
+        <div class="loslogos d-flex d-sm-none my-5">
+            <div class="slog justify-content-center border border-white border-opacity-10">
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-42.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-44.png" width="200px" >
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-46.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-48.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-50.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-43.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-45.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-47.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-49.png" width="200px">
+                </div>
+                <div class="colaboraciones">
+                    <img src="./assets/png/web(YANROH)-assets-51.png" width="200px">
+                </div>
             </div>
         </div>
     </section>
     <section id="contacto">
-        <div class="container">
-            <div class="row d-flex text-center justify-content-center">
-                <div class="">
-                    <h3>¿LISTO PARA TRABAJAR CONMIGO?</h3>
-                </div>
-                <div>
-                    <p>Lima, Perú</p>
-                </div>
-                <div class="d-flex justify-content-center font-responsive">
-                   <a href="mailto:hola@yanroh.me"><h1 class="cro font-responsive">HOLA@YANROH.ME</h1></a>
-                </div>
-                <div>
-                    <a href=""><p>(+51) 961607474</p></a>
-                </div>    
-                <div class="d-flex justify-content-center">   
-                    <ul class="redes-sociales">
-                        <li><a href="https://www.facebook.com/rivajeanr">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/yanroh.dg/">Instagram</a></li>
-                        <li><a href="https://www.behance.net/yanroh">Behance</a></li>
-                        <li><a href="https://www.linkedin.com/in/yanroh/">Linkedin</a></li>
-                        <li><a href="https://www.freepik.com/author/yanroh">Freepik</a></li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="row d-flex text-center justify-content-center border-top border-white border-opacity-10 py-sm-4">
+                <div class="align-content-center mt-5 mb-sm-5 pb-3">
+                    <div class="mt-2 ms-4 mb-4">
+                        <h3>¿LISTO PARA TRABAJAR JUNTOS?</h3>
+                    </div>
+                    <div class="pt-4 my-4">
+                        <p>Lima, Perú</p>
+                    </div>
+                    <div class="d-flex justify-content-center font-responsive">
+                        <h1 class="cro font-responsive">HOLA@YANROH.ME</h1>
+                    </div>
+                    <div class="">
+                        <p>(+51) 961607474</p>
+                    </div>    
+                    <div class="d-flex justify-content-center mt-5 mb-sm-5">   
+                        <ul class="redes-sociales font-subtitle-responsive">
+                            <li class="font-subtitle-responsive"><a href="https://www.facebook.com/rivajeanr">Facebook</a></li>
+                            <li class="font-subtitle-responsive"><a href="https://www.instagram.com/yanroh.dg/">Instagram</a></li>
+                            <li class="font-subtitle-responsive"><a href="https://www.behance.net/yanroh">Behance</a></li>
+                            <li class="font-subtitle-responsive"><a href="https://pe.linkedin.com/in/yanroh">Linkedin</a></li>
+                            <li class="font-subtitle-responsive"><a href="https://www.freepik.com/author/yanroh">Freepik</a></li>
+                        </ul>
+                    </div>
                 </div> 
             </div>   
         </div>    
     </section>
     <footer>
-        <div>
-             <p>©Copyright 2024 by <strong>YanRoh</strong> All Rights Reserved</p>
-        </div>
-        <div class="logo-redes-foot"> 
-            <div>
-                <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" alt=""></a>
-            </div>
-            <div>
-            <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" alt=""></a>
-            </div>
-            <div>
-            <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" alt=""></a>
-            </div>
-            <div>
-            <a href="https://www.linkedin.com/in/yanroh/"><img src="./assets/png/Linkedin.png" alt=""></a>
-            </div>
-            <div>
-                <a href="https://www.freepik.com/author/yanroh"><img src="" alt=""></a>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around border-top border-white border-opacity-10">
+                <div class="d-flex text-center">
+                    <p class="my-4">Copyright © 2024 by YanRoh. All Rights Reserved.</p>
+                </div>
+                <div class="logo-redes-foot d-flex my-3"> 
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.facebook.com/rivajeanr"><img src="./assets/png/Facebook.png" width="9px" height="15px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.instagram.com/yanroh.dg/"><img src="./assets/png/Instagram.png" width="16px" height="16px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center"> 
+                        <a href="https://www.behance.net/yanroh"><img src="./assets/png/Be.png" width="18px" height="12px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://pe.linkedin.com/in/yanroh"><img src="./assets/png/Linkedin.png" width="15px" height="15px"></a>
+                    </div>
+                    <div class="px-1 mx-1 border border-white border-opacity-10 rounded-circle d-flex align-items-center justify-content-center">
+                        <a href="https://www.freepik.com/author/yanroh"><img src="./assets/png/Freepik.png" width="15px"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+    // wrap carousel by using first child
+    next = items[0]
+}
+let cloneChild = next.cloneNode(true)
+el.appendChild(cloneChild.children[0])
+next = next.nextElementSibling
+}
+})
+
+
+    function displaySlide(id) { 
+        Array.from(document.getElementsByClassName('slide-servicios')).forEach((slide) => slide.classList.add('d-none'));
+        document.getElementById(id).classList.remove('d-none');
+    }
+
+</script>
 </body>
 </html>
