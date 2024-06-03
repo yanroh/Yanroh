@@ -45,7 +45,7 @@ header .navbar {
     width: 100%;
 }
 nav ul{
-    width: 750px;
+    width: 380px;
     max-width: 1000px;
     padding: 0;
     font-family: 'morgant';
@@ -55,6 +55,11 @@ nav ul{
     color: white;
 }
 .nav-link:hover {
+    background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.nav-link:active {
     background: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128));
     -webkit-background-clip: text;
     color: transparent; 
@@ -742,4 +747,10 @@ footer p {
         top: 318px !important;
         width: 110px !important;
     } 
+}
+.navbar-width {
+    width: 380px !important;
+    @media (min-width: 576px) {
+        width: 780px !important;
+    }
 }
