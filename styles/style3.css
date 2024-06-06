@@ -270,7 +270,7 @@ input, textarea {
 .d-flex.justify-content-center .redes-sociales li {
     padding: 14px;
     font-family: 'gothamth';
-    font-size: 16px;
+    font-size: 11px;
     width: fit-content;
     letter-spacing: 0.5px;
 }
@@ -317,7 +317,7 @@ footer p {
     }
 }
 .font-subtitle-responsive {
-    font-size: 12px !important;
+    font-size: 11px !important;
     @media (min-width: 576px) {
         font-size: 16px !important;
     }

@@ -270,7 +270,7 @@ button.nav-link:hover {
 .d-flex h4 {
     font-family: 'morgant';
     font-size: 10px;
-    color: grey;
+    color: white;
     margin: 0;
 }
 .d-flex h2 {
@@ -313,16 +313,29 @@ button.nav-link:hover {
 }
 .card .card-img {
     width: 350px;
-    height: 350px;
+    height: 477px;
 }
 .card-img-overlay.d-flex.row.align-content-end {
-    margin: 10px;
+    padding-bottom: 0px;
 }
 .card-img-overlay.d-flex.row.align-content-end h4 {
-    font-size: 10px;
+    font-family:'gotham';
+    font-weight: bold;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+
 }
 .card-img-overlay.d-flex.row.align-content-end p {
-    font-size: 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+    width: 350px;
+    padding: 0px;
+}
+.card-img-overlay .text-color {
+    color:#22264C
 }
 .carousel-control-prev-icon {
     background-image: url("/assets/png/Group12.png");
@@ -454,7 +467,7 @@ button.nav-link:hover {
 .d-flex.justify-content-center .redes-sociales li {
     padding: 14px;
     font-family: 'gothamth';
-    font-size: 12px;
+    font-size: 11px;
     width: fit-content;
     letter-spacing: 0.5px;
 }
@@ -688,7 +701,7 @@ footer p {
     }
 }
 .font-subtitle-responsive {
-    font-size: 12px !important;
+    font-size: 11px !important;
     @media (min-width: 576px) {
         font-size: 16px !important;
     }
