@@ -217,6 +217,10 @@ button.nav-link:hover {
 .btn.btn-danger:hover {
     background:#ae174a;
 }
+.btn.btn-outline-success a {
+    text-decoration: none;
+    color: white;
+}
 .btn.btn-outline-success {
     font-family: 'morgant';
     width: 160px;
@@ -442,8 +446,8 @@ button.nav-link:hover {
     display: inline;
 }
 #servicios .col-sm-7 .position-relative {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .img-20 {
     left: 15px;
@@ -453,9 +457,9 @@ button.nav-link:hover {
     top: 30px;
 }
 .img-22 {
-    left: 125px;
-    top:250px;
-    width: 160px;
+    left: 114px;
+    top:230px;
+    width: 130px;
 }
 .redes-sociales {
     max-width: 700px;
@@ -513,6 +517,15 @@ button.nav-link:hover {
     height: 240px;
     padding: 10px;
     margin: 5px;
+}
+.carousel-control-prev.bg-transparent.w-aut {
+    display: flex;
+    justify-content: flex-start;
+}
+.carousel-control-next.bg-transparent.w-aut {
+    display: flex;
+    justify-content: flex-end;
+
 }
 .nombre-curso {
     width: 240px;
@@ -587,7 +600,7 @@ button.nav-link:hover {
     font-size: 12px;
 }
 .clientes .ct {
-    font-family: 'morgant';
+    font-family:'morgant';
     font-size: 8px;
     border: 1.5px solid;
     border-image: linear-gradient(90deg, rgb(221, 187, 27), rgb(73, 202, 128)) 1;
@@ -599,6 +612,8 @@ button.nav-link:hover {
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
 }
 .ct:hover {
     background: #171C44;
@@ -737,8 +752,8 @@ footer p {
     }
 }
 .width-img {
-    width: 400px !important;
-    height: 400px !important;
+    width: 350px !important;
+    height: 350px !important;
     @media (min-width: 576px) {
         width: 550px !important;
         height: 550px !important;
@@ -752,9 +767,9 @@ footer p {
     } 
 }
 .position-logo {
-    left: 125px !important;
-    top: 250px !important;
-    width: 160px !important;
+    left: 114px !important;
+    top: 230px !important;
+    width: 130px !important;
     @media (min-width: 576px) {
         left: 231px !important;
         top: 318px !important;

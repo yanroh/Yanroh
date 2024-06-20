@@ -94,8 +94,10 @@ nav .border-start {
     background:#ae174a;
 }
 .encabezado {
-    max-width: 1000px;
     background: #161A42;
+}
+.encabezado .py-3 {
+    max-width: 1000px;
 }
 .encabezado h5 {
     font-family: 'modius';
@@ -111,22 +113,8 @@ nav .border-start {
 .encabezado h6 {
     font-family: 'gothamth';
 }
-.info {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    font-family: 'gothamt';
-}
-.proyecto {
-    width: 700px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.proyecto h6 {
-    font-family: 'gotham';
+.info p {
+    
 }
 #contacto {
     display: flex;
