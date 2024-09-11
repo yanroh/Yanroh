@@ -583,8 +583,14 @@ button.nav-link:hover {
 
 .testimonios-de-clientes {
     background-color: #22264C;
-    width: 270px;
+    width: 360px;
+    height: 450px;
     flex-wrap: wrap;
+        @media (min-width: 576px) {
+            width: 410px !important;
+            height: 320px !important;
+        }
+    
 }
 .card-text {
     background-color: #22264C;

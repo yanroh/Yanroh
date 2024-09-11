@@ -132,7 +132,7 @@ nav .border-start {
 }
 .cita {
     background: #171C44;
-    width: 380px;
+    width: 360px;
     height: 170px;
     flex-direction: column;
     font-family: 'gothamth';
@@ -293,6 +293,7 @@ nav .border-start {
     width: 85px;
     height: 2px;
 }
+
 #contacto h3 {
     font-family: 'modius';
     font-size: medium;
