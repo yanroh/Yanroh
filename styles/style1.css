@@ -145,6 +145,11 @@ nav .border-start {
     color: #E11E5E;
     font-size: 15px;
 }
+
+.informacion-personal {
+    font-family: 'gothamt';
+    font-size: 15px;
+}
 .img4 {
     position: relative;
     top: 200px;
@@ -173,11 +178,15 @@ nav .border-start {
     margin: 0;
 }
 .yan-roh p {
-    font-family: 'gothamt';
-    font-weight: lighter;
+    font-family: 'gothamth';
     font-size: 14px;
     max-width: 400px;
 }
+
+.text-bold {
+    font-weight: bold;
+}
+
 .yan-roh h6 {
     font-size: 10px;
 }
@@ -259,11 +268,11 @@ nav .border-start {
 }
 .antecedentes .row .d-flex h5 {
     font-family: 'gothamth';
-    font-size: small;
+    font-size: 14px;
 }
 .antecedentes .row .d-flex p {
     color: #E11E5E;
-    font-size: x-small;
+    font-size: small;
     font-family: 'gothamth';
 }
 .antecedentes .row .d-flex h2 {
@@ -281,14 +290,7 @@ nav .border-start {
     font-family: 'gothamth';
     align-content: start;
 }
-.antecedentes .row .d-flex h5 {
-    font-family: 'gothamth';
-    font-size: small;
-}
-.antecedentes .row .d-flex p {
-    color: #E11E5E;
-    font-size: x-small;
-}
+
 .antecedentes .row .d-flex img {
     width: 85px;
     height: 2px;
